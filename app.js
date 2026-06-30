@@ -1,9 +1,17 @@
 let words = [];
 let index = 0;
 
-// render
+/* =========================
+   RENDER
+========================= */
 function render() {
     if (!words.length) return;
+
+    const bg = randomColor();
+    const textColor = getContrastColor(bg);
+
+    document.body.style.background = bg;
+    document.body.style.color = textColor;
 
     document.getElementById("hu").innerText = words[index].hu;
     document.getElementById("ru").innerText = words[index].ru;
@@ -11,45 +19,53 @@ function render() {
         (index + 1) + " / " + words.length;
 }
 
-// animáció wrapper
-function animateChange(direction, callback) {
-    const card = document.getElementById("card");
-
-    if (direction === "up") {
-        card.classList.add("slide-up");
-    } else {
-        card.classList.add("slide-down");
-    }
-
-    setTimeout(() => {
-        callback();
-
-        card.classList.remove("slide-up");
-        card.classList.remove("slide-down");
-    }, 200);
+/* =========================
+   RANDOM BG COLOR
+========================= */
+function randomColor() {
+    const hue = Math.floor(Math.random() * 360);
+    return `hsl(${hue}, 80%, 50%)`;
 }
 
-// next
+/* =========================
+   CONTRAST CALC
+========================= */
+function getContrastColor(hslColor) {
+    const temp = document.createElement("div");
+    temp.style.color = hslColor;
+    document.body.appendChild(temp);
+
+    const rgb = getComputedStyle(temp).color;
+    document.body.removeChild(temp);
+
+    const values = rgb.match(/\d+/g);
+    const r = values[0], g = values[1], b = values[2];
+
+    const luminance = (0.299*r + 0.587*g + 0.114*b);
+
+    return luminance > 140 ? "#000" : "#fff";
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 function next() {
     if (index < words.length - 1) {
-        animateChange("up", () => {
-            index++;
-            render();
-        });
+        index++;
+        render();
     }
 }
 
-// prev
 function prev() {
     if (index > 0) {
-        animateChange("down", () => {
-            index--;
-            render();
-        });
+        index--;
+        render();
     }
 }
 
-// swipe detection
+/* =========================
+   SWIPE
+========================= */
 let startY = 0;
 
 function handleSwipe(endY) {
@@ -61,7 +77,6 @@ function handleSwipe(endY) {
     }
 }
 
-// mobile
 document.addEventListener("touchstart", e => {
     startY = e.touches[0].clientY;
 });
@@ -70,7 +85,6 @@ document.addEventListener("touchend", e => {
     handleSwipe(e.changedTouches[0].clientY);
 });
 
-// desktop
 document.addEventListener("mousedown", e => {
     startY = e.clientY;
 });
@@ -79,7 +93,9 @@ document.addEventListener("mouseup", e => {
     handleSwipe(e.clientY);
 });
 
-// CSV load
+/* =========================
+   CSV LOAD
+========================= */
 fetch("words.csv")
     .then(res => res.text())
     .then(text => {

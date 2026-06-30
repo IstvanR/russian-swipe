@@ -1,52 +1,45 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* kártya */
 #card {
-    text-align: center;
-    user-select: none;
-    transition: transform 0.35s ease, opacity 0.35s ease;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
-/* swipe animációk */
-.slide-up {
-    transform: translateY(-80px);
-    opacity: 0;
-}
-
-.slide-down {
-    transform: translateY(80px);
-    opacity: 0;
-}
-
-/* MAGYAR – 4x nagy */
+/* MAGYAR – nagyon nagy (1.5x upgrade) */
 #hu {
-    font-size: 96px;
+    font-size: 216px;
     font-weight: bold;
-    line-height: 1.2;
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* OROSZ – 2x nagy */
+/* OROSZ – nagy + alul */
 #ru {
-    font-size: 48px;
-    margin-top: 15px;
-    opacity: 0.8;
+    font-size: 108px;
+
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
 }
 
 /* counter */
 #counter {
     position: fixed;
     bottom: 20px;
+    width: 100%;
+    text-align: center;
     font-size: 14px;
     opacity: 0.4;
-    color: #aaa;
 }
