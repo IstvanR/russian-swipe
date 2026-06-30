@@ -1,6 +1,5 @@
 id,hu,ru
-0, 1-50: 1. fejezet \n51-100: 2. fejezet,null
-1,ház,дом
+1, 1-50: 1. fejezet \n51-100: 2. fejezet,null
 2,autó,машина
 3,kutya,собака
 4,ablak,окно
@@ -10,3 +9,4 @@ id,hu,ru
 8,macska,кот
 9,friss,свежий
 10,hatalom,власть
+11,ház,дом
