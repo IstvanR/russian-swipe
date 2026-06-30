@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#card {
+    text-align: center;
+    user-select: none;
+}
+
+#hu {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#ru {
+    font-size: 28px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+#counter {
+    position: fixed;
+    bottom: 20px;
+    font-size: 14px;
+    opacity: 0.5;
+}
