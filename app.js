@@ -2,6 +2,32 @@ let words = [];
 let index = 0;
 
 /* =========================
+   MENU
+========================= */
+const menuBtn = document.getElementById("menuBtn");
+const menuPanel = document.getElementById("menuPanel");
+
+menuBtn.addEventListener("click", () => {
+    menuPanel.classList.toggle("hidden");
+});
+
+function goToPage() {
+    const input = document.getElementById("pageInput");
+    let page = parseInt(input.value);
+
+    if (isNaN(page)) return;
+
+    page = page - 1;
+
+    if (page < 0 || page >= words.length) return;
+
+    index = page;
+    render();
+
+    menuPanel.classList.add("hidden");
+}
+
+/* =========================
    RENDER
 ========================= */
 function render() {
@@ -20,7 +46,7 @@ function render() {
 }
 
 /* =========================
-   RANDOM BG COLOR
+   RANDOM BG
 ========================= */
 function randomColor() {
     const hue = Math.floor(Math.random() * 360);
@@ -28,7 +54,7 @@ function randomColor() {
 }
 
 /* =========================
-   CONTRAST CALC
+   CONTRAST
 ========================= */
 function getContrastColor(hslColor) {
     const temp = document.createElement("div");

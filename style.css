@@ -5,14 +5,14 @@ body {
     overflow: hidden;
 }
 
-/* kártya */
+/* CARD */
 #card {
     position: relative;
     width: 100vw;
     height: 100vh;
 }
 
-/* MAGYAR – nagyon nagy (1.5x upgrade) */
+/* MAGYAR */
 #hu {
     font-size: 216px;
     font-weight: bold;
@@ -23,7 +23,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* OROSZ – nagy + alul */
+/* OROSZ */
 #ru {
     font-size: 108px;
 
@@ -34,12 +34,63 @@ body {
     opacity: 0.9;
 }
 
-/* counter */
+/* COUNTER */
 #counter {
     position: fixed;
     bottom: 20px;
     width: 100%;
     text-align: center;
-    font-size: 42px;
+    font-size: 14px;
     opacity: 0.4;
+}
+
+/* MENU BUTTON */
+#menuBtn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#menuBtn:hover {
+    opacity: 1;
+}
+
+/* MENU PANEL */
+#menuPanel {
+    position: fixed;
+    top: 55px;
+    left: 15px;
+    background: rgba(0,0,0,0.7);
+    padding: 12px;
+    border-radius: 10px;
+    z-index: 999;
+    color: #fff;
+    backdrop-filter: blur(8px);
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item input {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+.menu-item button {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }

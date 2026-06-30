@@ -10,11 +10,24 @@
 </head>
 <body>
 
+<!-- MENU -->
+<div id="menuBtn">☰</div>
+
+<div id="menuPanel" class="hidden">
+    <div class="menu-item">
+        <label>Go to page:</label>
+        <input id="pageInput" type="number" min="1" />
+        <button onclick="goToPage()">Go</button>
+    </div>
+</div>
+
+<!-- CARD -->
 <div id="card">
     <div id="hu"></div>
     <div id="ru"></div>
 </div>
 
+<!-- COUNTER -->
 <div id="counter"></div>
 
 <script src="app.js"></script>
