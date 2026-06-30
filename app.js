@@ -1,7 +1,7 @@
 let words = [];
 let index = 0;
 
-// render UI
+// render
 function render() {
     if (!words.length) return;
 
@@ -11,38 +11,57 @@ function render() {
         (index + 1) + " / " + words.length;
 }
 
-// next word
+// animáció wrapper
+function animateChange(direction, callback) {
+    const card = document.getElementById("card");
+
+    if (direction === "up") {
+        card.classList.add("slide-up");
+    } else {
+        card.classList.add("slide-down");
+    }
+
+    setTimeout(() => {
+        callback();
+
+        card.classList.remove("slide-up");
+        card.classList.remove("slide-down");
+    }, 200);
+}
+
+// next
 function next() {
     if (index < words.length - 1) {
-        index++;
-        render();
+        animateChange("up", () => {
+            index++;
+            render();
+        });
     }
 }
 
-// previous word
+// prev
 function prev() {
     if (index > 0) {
-        index--;
-        render();
+        animateChange("down", () => {
+            index--;
+            render();
+        });
     }
 }
 
-// swipe logic
+// swipe detection
 let startY = 0;
 
 function handleSwipe(endY) {
     let diff = startY - endY;
 
     if (Math.abs(diff) > 50) {
-        if (diff > 0) {
-            next(); // swipe up
-        } else {
-            prev(); // swipe down
-        }
+        if (diff > 0) next();
+        else prev();
     }
 }
 
-// MOBILE swipe
+// mobile
 document.addEventListener("touchstart", e => {
     startY = e.touches[0].clientY;
 });
@@ -51,7 +70,7 @@ document.addEventListener("touchend", e => {
     handleSwipe(e.changedTouches[0].clientY);
 });
 
-// DESKTOP swipe (mouse)
+// desktop
 document.addEventListener("mousedown", e => {
     startY = e.clientY;
 });
@@ -61,18 +80,16 @@ document.addEventListener("mouseup", e => {
 });
 
 // CSV load
-Papa.parse("words.csv", {
-    download: true,
-    header: true,
-    skipEmptyLines: true,
-    encoding: "UTF-8",
-    complete: function(results) {
-
-        console.log("CSV loaded:", results.data);
+fetch("words.csv")
+    .then(res => res.text())
+    .then(text => {
+        const results = Papa.parse(text, {
+            header: true,
+            skipEmptyLines: true
+        });
 
         words = results.data.filter(w => w.hu && w.ru);
 
         index = 0;
         render();
-    }
-});
+    });
