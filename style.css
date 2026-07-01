@@ -1,3 +1,7 @@
+/* ===========================
+   BASE
+=========================== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,7 +20,7 @@ body {
 }
 
 /* ===========================
-   MAGYAR (FŐ SZÓ)
+   MAGYAR SZÓ (HU)
 =========================== */
 
 #hu {
@@ -31,13 +35,11 @@ body {
 
     width: 90%;
 
-    /* 🔥 FIX: hosszú szó kezelés */
     word-break: break-word;
     overflow-wrap: break-word;
     white-space: normal;
     line-height: 1.1;
 
-    /* 🔥 FIX: ne toljon el más elemeket */
     max-height: 60vh;
     overflow: hidden;
 
@@ -47,7 +49,7 @@ body {
 }
 
 /* ===========================
-   OROSZ
+   OROSZ SZÓ (RU)
 =========================== */
 
 #ru {
@@ -80,7 +82,7 @@ body {
 }
 
 /* ===========================
-   HAMBURGER MENU
+   HAMBURGER BUTTON
 =========================== */
 
 #menuBtn {
@@ -117,42 +119,102 @@ body {
     backdrop-filter: blur(10px);
 
     z-index: 999;
+
+    min-width: 420px;
 }
 
-/* layout */
+/* ===========================
+   TAB BUTTONS
+=========================== */
+
+#menuTabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+#menuTabs button {
+    font-size: 34px;
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+/* ===========================
+   TAB CONTENT
+=========================== */
+
+.menuTab {
+    display: block;
+}
+
+.menuTab.hidden {
+    display: none;
+}
+
+/* ===========================
+   GO TO PAGE FORM
+=========================== */
+
 .menu-item {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* label */
 .menu-item label {
     font-size: 42px;
     font-weight: bold;
     color: white;
 }
 
-/* input */
 .menu-item input {
     width: 260px;
     font-size: 42px;
     padding: 18px;
+
     border-radius: 15px;
     border: none;
 }
 
-/* button */
 .menu-item button {
     font-size: 42px;
     padding: 18px;
+
     border-radius: 15px;
     border: none;
+
     cursor: pointer;
     font-weight: bold;
 }
 
-/* hidden */
+/* ===========================
+   CONTENT LIST
+=========================== */
+
+#contentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contentsList button {
+    font-size: 38px;
+    padding: 18px;
+
+    border: none;
+    border-radius: 14px;
+
+    cursor: pointer;
+}
+
+/* ===========================
+   HIDDEN CLASS
+=========================== */
+
 .hidden {
     display: none;
-}   
+}

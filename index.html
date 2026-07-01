@@ -1,36 +1,131 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
+
     <meta charset="UTF-8">
+
     <title>Russian Swipe</title>
 
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
 </head>
+
 <body>
 
-<!-- MENU -->
-<div id="menuBtn">☰</div>
+    <!-- ===================================== -->
+    <!-- HAMBURGER -->
+    <!-- ===================================== -->
 
-<div id="menuPanel" class="hidden">
-    <div class="menu-item">
-        <label>Go to page:</label>
-        <input id="pageInput" type="number" min="1" />
-        <button onclick="goToPage()">Go</button>
+    <div id="menuBtn">
+        ☰
     </div>
-</div>
 
-<!-- CARD -->
-<div id="card">
-    <div id="hu"></div>
-    <div id="ru"></div>
-</div>
+    <!-- ===================================== -->
+    <!-- MENU -->
+    <!-- ===================================== -->
 
-<!-- COUNTER -->
-<div id="counter"></div>
+    <div id="menuPanel" class="hidden">
 
-<script src="app.js"></script>
+        <!-- TAB GOMBOK -->
+
+        <div id="menuTabs">
+
+            <button onclick="openTab('gotoTab')">
+                Go to page
+            </button>
+
+            <button onclick="openTab('contentsTab')">
+                Tartalomjegyzék
+            </button>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- GO TO PAGE -->
+        <!-- ===================================== -->
+
+        <div id="gotoTab" class="menuTab">
+
+            <div class="menu-item">
+
+                <label>
+
+                    Go to page
+
+                </label>
+
+                <input
+                    id="pageInput"
+                    type="number"
+                    min="1">
+
+                <button onclick="goToPage()">
+
+                    Go
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- TARTALOMJEGYZÉK -->
+        <!-- ===================================== -->
+
+        <div id="contentsTab" class="menuTab hidden">
+
+            <div id="contentsList">
+
+                <button onclick="jumpTo(0)">
+                    1 - Alap szavak
+                </button>
+
+                <button onclick="jumpTo(100)">
+                    101 - Család
+                </button>
+
+                <button onclick="jumpTo(200)">
+                    201 - Munka
+                </button>
+
+                <button onclick="jumpTo(300)">
+                    301 - Utazás
+                </button>
+
+                <button onclick="jumpTo(400)">
+                    401 - Igék
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- CARD -->
+    <!-- ===================================== -->
+
+    <div id="card">
+
+        <div id="hu"></div>
+
+        <div id="ru"></div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- COUNTER -->
+    <!-- ===================================== -->
+
+    <div id="counter"></div>
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>
