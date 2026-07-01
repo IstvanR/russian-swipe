@@ -15,10 +15,12 @@ body {
     height: 100vh;
 }
 
-/* MAGYAR */
+/* ===========================
+   MAGYAR (FŐ SZÓ)
+=========================== */
 
 #hu {
-    font-size: 216px;
+    font-size: clamp(48px, 10vw, 216px);
     font-weight: bold;
 
     position: absolute;
@@ -26,13 +28,30 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
     width: 90%;
+
+    /* 🔥 FIX: hosszú szó kezelés */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.1;
+
+    /* 🔥 FIX: ne toljon el más elemeket */
+    max-height: 60vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* OROSZ */
+/* ===========================
+   OROSZ
+=========================== */
 
 #ru {
-    font-size: 108px;
+    font-size: clamp(28px, 5vw, 108px);
 
     position: absolute;
     bottom: 5%;
@@ -42,9 +61,14 @@ body {
 
     text-align: center;
     width: 90%;
+
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
-/* COUNTER */
+/* ===========================
+   COUNTER
+=========================== */
 
 #counter {
     position: fixed;
@@ -56,120 +80,79 @@ body {
 }
 
 /* ===========================
-   HAMBURGER
+   HAMBURGER MENU
 =========================== */
 
 #menuBtn {
-
     position: fixed;
     top: 15px;
     left: 20px;
 
     font-size: 112px;
-
     line-height: 0.8;
 
     cursor: pointer;
-
     z-index: 1000;
 
     opacity: .45;
-
     user-select: none;
 }
 
-#menuBtn:hover{
-
-    opacity:1;
-
+#menuBtn:hover {
+    opacity: 1;
 }
 
 /* ===========================
-   MENU
+   MENU PANEL
 =========================== */
 
-#menuPanel{
+#menuPanel {
+    position: fixed;
+    top: 120px;
+    left: 20px;
 
-    position:fixed;
+    padding: 30px;
+    background: rgba(0,0,0,.80);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
 
-    top:120px;
-
-    left:20px;
-
-    padding:30px;
-
-    background:rgba(0,0,0,.80);
-
-    border-radius:25px;
-
-    backdrop-filter:blur(10px);
-
-    z-index:999;
-
+    z-index: 999;
 }
 
 /* layout */
-
-.menu-item{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:20px;
-
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* label */
-
-.menu-item label{
-
-    font-size:42px;
-
-    font-weight:bold;
-
-    color:white;
-
+.menu-item label {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
 }
 
-/* textbox */
-
-.menu-item input{
-
-    width:260px;
-
-    font-size:42px;
-
-    padding:18px;
-
-    border-radius:15px;
-
-    border:none;
-
-    text-align:left;
-
+/* input */
+.menu-item input {
+    width: 260px;
+    font-size: 42px;
+    padding: 18px;
+    border-radius: 15px;
+    border: none;
 }
 
 /* button */
-
-.menu-item button{
-
-    font-size:42px;
-
-    padding:18px;
-
-    border-radius:15px;
-
-    border:none;
-
-    cursor:pointer;
-
-    font-weight:bold;
-
+.menu-item button {
+    font-size: 42px;
+    padding: 18px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.hidden{
-
-    display:none;
-
-}
+/* hidden */
+.hidden {
+    display: none;
+}   
