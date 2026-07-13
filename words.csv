@@ -1164,85 +1164,84 @@
 1163,angol,англичанин
 1164,német,немец
 1165,finn,финн
-1166,svéd,швед
-1167,amerikai,американец
-1168,pilóta,пилот
-1169,matróz,моряк
-1170,esély,шанс
-1171,perspektíva,перспектива
-1172,ünneplünk,мы празднуем
-1173,unokaöccs,племянник
-1174,összetalálkozunk,мы встретимся
-1175,elfoglalt,занятый
-1176,szigorú,строгий
-1177,friss,свежий
-1178,közös,общий
-1179,szoknya,юбка
-1180,első,первый
-1181,második,второй
-1182,harmadik,третий
-1183,negyedik,четвёртый
-1184,ötödik,пятый
-1185,hatodik,шестой
-1186,hetedik,седьмой
-1187,nyolcadik,восьмой
-1188,kilencedik,девятый
-1189,tizedik,десятый
-1190,tizenharmadik,тринадцатый
-1191,huszadik,двадцатый
-1192,negyvenedik,сороковой
-1193,századik,сотый
-1194,ezredik,тысячный
-1195,milliomodik,миллионный
-1196,magassarok,высокий каблук
-1197,viselek,ношу
-1198,köntös,халат
-1199,beszéd,речь
-1200,nagy,большой
-1201,kicsi,маленький
-1202,széles,широкий
-1203,szűk,узкий
-1204,ez rám pont jó,мне как раз
-1205,napirend,распорядок дня
-1206,fogat mosni,чистить зубы
-1207,keménytojás,варёное яйцо
-1208,elhozni a lányomat,забрать мою дочь
-1209,szörnyen,ужасно
-1210,eső,дождь
-1211,szél,ветер
-1212,elefánt,slon
-1213,fém, metall
-1214,műanyag, plasztik
+1166,amerikai,американец
+1167,pilóta,пилот
+1168,matróz,моряк
+1169,esély,шанс
+1170,perspektíva,перспектива
+1171,ünneplünk,мы празднуем
+1172,unokaöccs,племянник
+1173,összetalálkozunk,мы встретимся
+1174,elfoglalt,занятый
+1175,szigorú,строгий
+1176,friss,свежий
+1177,közös,общий
+1178,szoknya,юбка
+1179,első,первый
+1180,második,второй
+1181,harmadik,третий
+1182,negyedik,четвёртый
+1183,ötödik,пятый
+1184,hatodik,шестой
+1185,hetedik,седьмой
+1186,nyolcadik,восьмой
+1187,kilencedik,девятый
+1188,tizedik,десятый
+1189,tizenharmadik,тринадцатый
+1190,huszadik,двадцатый
+1191,negyvenedik,сороковой
+1192,századik,сотый
+1193,ezredik,тысячный
+1194,milliomodik,миллионный
+1195,magassarok,высокий каблук
+1196,viselek,ношу
+1197,köntös,халат
+1198,beszéd,речь
+1199,nagy,большой
+1200,kicsi,маленький
+1201,széles,широкий
+1202,szűk,узкий
+1203,ez rám pont jó,мне как раз
+1204,napirend,распорядок дня
+1205,fogat mosni,чистить зубы
+1206,keménytojás,варёное яйцо
+1207,elhozni a lányomat,забрать мою дочь
+1208,szörnyen,ужасно
+1209,eső,дождь
+1210,szél,ветер
+1211,elefánt,slon
+1212,fém, metall
+1213,műanyag, plasztik
 1215,умываюсь умываешься умывается умываемся умываетесь умываются,megmosakszik
 1216,проснусь проснёшься проснётся проснёмся проснётесь проснутся,felkelni
 1217,учусь учишься учится учимся учитесь учатся,tanulni
 1218,rendben vagyok,Я в порядке
-1218,napirend,распорядок дня
-1219,olvasás,чтение
-1220,megjelenés külső,внешностb
-1221,ovális,овальный
-1222,közepesen,средне
-1223,magas,высокий
-1224,magasság,рост
-1225,diétázik,сидеть на диете
-1226,megbízható,надёжный
-1227,türelmetlen,нетерпеливый
-1228,becstelen,непорядочный
-1229,barna szem,карие глаза
-1230,erős testalkatú,крепкого телосложения
-1231,gyakran,часто
-1232,barna hajú férfi,брюнет
-1233,elkésik, késik,опаздывает
-1234,segítőkész,отзывчивый
-1235,humorérzék,чувство юмора
-1236,félelem,страх
-1237,gyógyszer,таблетка
-1238,megbeszélni,обсуждать
-1239,kiadvány,выпуск
-1240,aláírni,подписывать
-1241,ünneplünk,празднуем
-1242,lépésről lépésre,шаг за шагом
-1243,fehérje,белок
-1244,szénhidrát,углевод
-1245,zsír,жир
-1246,ne topogj!,не топай!
+1217,napirend,распорядок дня
+1218,olvasás,чтение
+1219,megjelenés külső,внешностb
+1220,ovális,овальный
+1221,közepesen,средне
+1222,magas,высокий
+1223,magasság,рост
+1224,diétázik,сидеть на диете
+1225,megbízható,надёжный
+1226,türelmetlen,нетерпеливый
+1227,becstelen,непорядочный
+1228,barna szem,карие глаза
+1229,erős testalkatú,крепкого телосложения
+1230,gyakran,часто
+1231,barna hajú férfi,брюнет
+1232,elkésik, késik,опаздывает
+1233,segítőkész,отзывчивый
+1234,humorérzék,чувство юмора
+1235,félelem,страх
+1236,gyógyszer,таблетка
+1237,megbeszélni,обсуждать
+1238,kiadvány,выпуск
+1239,aláírni,подписывать
+1240,ünneplünk,празднуем
+1241,lépésről lépésre,шаг за шагом
+1242,fehérje,белок
+1243,szénhidrát,углевод
+1244,zsír,жир
+1245,ne topogj!,не топай!
