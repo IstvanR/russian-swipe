@@ -1,4 +1,3 @@
-
 /* =========================
    STATE
 ========================= */
@@ -6,33 +5,45 @@
 let words = [];
 let index = 0;
 
+// true = magyar
+// false = orosz
+let showHungarian = true;
+
+
 /* =========================
-   MENU TOGGLE
+   MENU
 ========================= */
 
 const menuBtn = document.getElementById("menuBtn");
 const menuPanel = document.getElementById("menuPanel");
 
 menuBtn.addEventListener("click", () => {
+
     menuPanel.classList.toggle("hidden");
 
     if (!menuPanel.classList.contains("hidden")) {
         openTab("gotoTab");
     }
+
 });
 
+
 /* =========================
-   TAB SWITCH
+   TABS
 ========================= */
 
 function openTab(tabId) {
 
-    document.querySelectorAll(".menuTab")
-        .forEach(tab => tab.classList.add("hidden"));
+    document.querySelectorAll(".menuTab").forEach(tab => {
 
-    document.getElementById(tabId)
-        .classList.remove("hidden");
+        tab.classList.add("hidden");
+
+    });
+
+    document.getElementById(tabId).classList.remove("hidden");
+
 }
+
 
 /* =========================
    GO TO PAGE
@@ -46,19 +57,23 @@ function goToPage() {
 
     if (isNaN(page)) return;
 
-    page = page - 1;
+    page--;
 
-    if (page < 0 || page >= words.length) return;
+    if (page < 0) return;
+    if (page >= words.length) return;
 
     index = page;
+    showHungarian = true;
 
     render();
 
     menuPanel.classList.add("hidden");
+
 }
 
+
 /* =========================
-   CONTENTS JUMP
+   CONTENTS
 ========================= */
 
 function jumpTo(page) {
@@ -67,11 +82,27 @@ function jumpTo(page) {
     if (page >= words.length) return;
 
     index = page;
+    showHungarian = true;
 
     render();
 
     menuPanel.classList.add("hidden");
+
 }
+
+
+/* =========================
+   FLIP
+========================= */
+
+document.getElementById("flipBtn").addEventListener("click", () => {
+
+    showHungarian = !showHungarian;
+
+    render();
+
+});
+
 
 /* =========================
    RENDER
@@ -79,7 +110,7 @@ function jumpTo(page) {
 
 function render() {
 
-    if (!words.length) return;
+    if (words.length === 0) return;
 
     const bg = randomColor();
     const textColor = getContrastColor(bg);
@@ -87,12 +118,29 @@ function render() {
     document.body.style.background = bg;
     document.body.style.color = textColor;
 
-    document.getElementById("hu").innerText = words[index].hu;
-    document.getElementById("ru").innerText = words[index].ru;
+    const label = document.getElementById("languageLabel");
+    const word = document.getElementById("word");
+    const btn = document.getElementById("flipBtn");
+
+    if (showHungarian) {
+
+        label.innerText = "MAGYAR";
+        word.innerText = words[index].hu;
+        btn.innerText = "Mutasd az oroszt";
+
+    } else {
+
+        label.innerText = "РУССКИЙ";
+        word.innerText = words[index].ru;
+        btn.innerText = "Mutasd a magyart";
+
+    }
 
     document.getElementById("counter").innerText =
         (index + 1) + " / " + words.length;
+
 }
+
 
 /* =========================
    RANDOM COLOR
@@ -102,11 +150,13 @@ function randomColor() {
 
     const hue = Math.floor(Math.random() * 360);
 
-    return `hsl(${hue}, 80%, 50%)`;
+    return `hsl(${hue},80%,50%)`;
+
 }
 
+
 /* =========================
-   CONTRAST COLOR
+   TEXT COLOR
 ========================= */
 
 function getContrastColor(hslColor) {
@@ -123,15 +173,19 @@ function getContrastColor(hslColor) {
 
     const values = rgb.match(/\d+/g);
 
-    const r = values[0];
-    const g = values[1];
-    const b = values[2];
+    const r = parseInt(values[0]);
+    const g = parseInt(values[1]);
+    const b = parseInt(values[2]);
 
     const luminance =
-        (0.299 * r + 0.587 * g + 0.114 * b);
+        0.299 * r +
+        0.587 * g +
+        0.114 * b;
 
-    return luminance > 140 ? "#000" : "#fff";
+    return luminance > 140 ? "#000000" : "#FFFFFF";
+
 }
+
 
 /* =========================
    NAVIGATION
@@ -139,52 +193,114 @@ function getContrastColor(hslColor) {
 
 function next() {
 
-    if (index < words.length - 1) {
-        index++;
-        render();
-    }
+    if (index >= words.length - 1)
+        return;
+
+    index++;
+
+    showHungarian = true;
+
+    render();
+
 }
+
 
 function prev() {
 
-    if (index > 0) {
-        index--;
-        render();
-    }
+    if (index <= 0)
+        return;
+
+    index--;
+
+    showHungarian = true;
+
+    render();
+
 }
 
+
 /* =========================
-   SWIPE GESTURE
+   SWIPE
 ========================= */
 
 let startY = 0;
 
 function handleSwipe(endY) {
 
-    let diff = startY - endY;
+    const diff = startY - endY;
 
-    if (Math.abs(diff) > 50) {
+    if (Math.abs(diff) < 50)
+        return;
 
-        if (diff > 0) next();
-        else prev();
-    }
+    if (diff > 0)
+        next();
+    else
+        prev();
+
 }
 
+
+/* =========================
+   TOUCH
+========================= */
+
 document.addEventListener("touchstart", e => {
+
     startY = e.touches[0].clientY;
+
 });
 
 document.addEventListener("touchend", e => {
+
     handleSwipe(e.changedTouches[0].clientY);
+
 });
 
+
+/* =========================
+   MOUSE
+========================= */
+
 document.addEventListener("mousedown", e => {
+
     startY = e.clientY;
+
 });
 
 document.addEventListener("mouseup", e => {
+
     handleSwipe(e.clientY);
+
 });
+
+
+/* =========================
+   KEYBOARD
+========================= */
+
+document.addEventListener("keydown", e => {
+
+    switch (e.key) {
+
+        case "ArrowUp":
+            prev();
+            break;
+
+        case "ArrowDown":
+            next();
+            break;
+
+        case " ":
+        case "Enter":
+            e.preventDefault();
+            showHungarian = !showHungarian;
+            render();
+            break;
+
+    }
+
+});
+
 
 /* =========================
    CSV LOAD
@@ -195,13 +311,36 @@ fetch("words.csv")
     .then(text => {
 
         const results = Papa.parse(text, {
-            header: true,
+
+            header: false,
             skipEmptyLines: true
+
         });
 
-        words = results.data.filter(w => w.hu && w.ru);
+        words = results.data
+            .filter(row => row.length >= 3)
+            .map(row => ({
+
+                id: parseInt(row[0]),
+
+                hu: row[1].trim(),
+
+                ru: row[2].trim()
+
+            }));
 
         index = 0;
 
+        showHungarian = true;
+
         render();
+
+    })
+    .catch(err => {
+
+        console.error(err);
+
+        document.getElementById("word").innerText =
+            "Nem sikerült betölteni a words.csv fájlt.";
+
     });

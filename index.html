@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="hu">
 
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Russian Swipe</title>
 
@@ -15,21 +17,19 @@
 
 <body>
 
-    <!-- ===================================== -->
-    <!-- HAMBURGER -->
-    <!-- ===================================== -->
+    <!-- =========================
+         HAMBURGER
+    ========================== -->
 
     <div id="menuBtn">
         ☰
     </div>
 
-    <!-- ===================================== -->
-    <!-- MENU -->
-    <!-- ===================================== -->
+    <!-- =========================
+         MENU
+    ========================== -->
 
     <div id="menuPanel" class="hidden">
-
-        <!-- TAB GOMBOK -->
 
         <div id="menuTabs">
 
@@ -43,18 +43,16 @@
 
         </div>
 
-        <!-- ===================================== -->
-        <!-- GO TO PAGE -->
-        <!-- ===================================== -->
+        <!-- =========================
+             GO TO PAGE
+        ========================== -->
 
         <div id="gotoTab" class="menuTab">
 
             <div class="menu-item">
 
                 <label>
-
                     Go to page
-
                 </label>
 
                 <input
@@ -63,18 +61,16 @@
                     min="1">
 
                 <button onclick="goToPage()">
-
                     Go
-
                 </button>
 
             </div>
 
         </div>
 
-        <!-- ===================================== -->
-        <!-- TARTALOMJEGYZÉK -->
-        <!-- ===================================== -->
+        <!-- =========================
+             CONTENTS
+        ========================== -->
 
         <div id="contentsTab" class="menuTab hidden">
 
@@ -89,23 +85,23 @@
                 </button>
 
                 <button onclick="jumpTo(1097)">
-                    1097 - kávé 1.
+                    1097 - Kávé 1.
                 </button>
 
                 <button onclick="jumpTo(1151)">
-                    1151 - kávé 2.
+                    1151 - Kávé 2.
                 </button>
 
                 <button onclick="jumpTo(1173)">
-                    1173 - kávé 3.
+                    1173 - Kávé 3.
                 </button>
 
                 <button onclick="jumpTo(1206)">
-                    1206 - kávé 4.
+                    1206 - Kávé 4.
                 </button>
 
                 <button onclick="jumpTo(1219)">
-                    1219 - kávé 5.
+                    1219 - Kávé 5.
                 </button>
 
             </div>
@@ -114,26 +110,41 @@
 
     </div>
 
-    <!-- ===================================== -->
-    <!-- CARD -->
-    <!-- ===================================== -->
+    <!-- =========================
+         CARD
+    ========================== -->
 
     <div id="card">
 
-        <div id="hu"></div>
+        <div id="languageLabel">
+            Magyar
+        </div>
 
-        <div id="ru"></div>
+        <div id="word">
+            Betöltés...
+        </div>
+
+        <button id="flipBtn">
+            Mutasd az oroszt
+        </button>
 
     </div>
 
-    <!-- ===================================== -->
-    <!-- COUNTER -->
-    <!-- ===================================== -->
+    <!-- =========================
+         COUNTER
+    ========================== -->
 
-    <div id="counter"></div>
+    <div id="counter">
+        0 / 0
+    </div>
+
+    <!-- =========================
+         APP
+    ========================== -->
 
     <script src="app.js"></script>
 
 </body>
 
 </html>
+```
