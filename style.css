@@ -307,15 +307,12 @@ body {
 #flipBtn {
 
 
-    margin-top:auto;
-
-
     margin-bottom:20px;
 
 
     padding:
 
-        16px 45px;
+        5px 5px;
 
 
     font-size:22px;
@@ -361,6 +358,9 @@ body {
 
 #counter {
 
+
+    margin-top:auto;
+    
 
     height:5%;
 
