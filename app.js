@@ -221,8 +221,6 @@ function next(){
 
         index++;
 
-        showHungarian = true;
-
         render();
 
 
@@ -241,8 +239,6 @@ function prev(){
 
 
         index--;
-
-        showHungarian = true;
 
         render();
 
