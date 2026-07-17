@@ -447,6 +447,16 @@ body {
 
         font-size:18px;
 
+        transform:translateY(12px);
+
+    }
+
+
+
+    #counter {
+
+        transform:translateY(12px);
+
     }
 
 
