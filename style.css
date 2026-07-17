@@ -1,122 +1,182 @@
-/* =========================
-   CARD
-========================= */
+* {
+    box-sizing:border-box;
+}
+
+
+body {
+
+    margin:0;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:Arial,sans-serif;
+
+    transition:.3s;
+
+}
+
+
+
+.hidden {
+
+    display:none !important;
+
+}
+
+
+
+/* MENU */
+
+#menuBtn {
+
+    position:fixed;
+
+    top:20px;
+
+    left:20px;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+}
+
+
+
+#menuPanel {
+
+    position:fixed;
+
+    top:70px;
+
+    left:20px;
+
+    padding:20px;
+
+    background:white;
+
+    color:black;
+
+    border-radius:15px;
+
+    z-index:10;
+
+}
+
+
+
+#menuPanel button {
+
+    display:block;
+
+    width:200px;
+
+    margin:8px;
+
+    padding:10px;
+
+    color:black;
+
+    background:#eee;
+
+    border:none;
+
+    border-radius:8px;
+
+}
+
+
+
+#menuPanel input {
+
+    width:100px;
+
+}
+
+
+
+
+/* CARD */
+
 
 #card {
 
     width:90%;
+
     max-width:900px;
+
     height:85dvh;
 
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
+
     text-align:center;
 
 }
 
 
-/* =========================
-   LANGUAGE TOP
-========================= */
 
 #languageLabel {
 
-    width:100%;
     height:70px;
 
     display:flex;
-    justify-content:center;
+
     align-items:center;
 
+    justify-content:center;
+
     font-size:28px;
+
     font-weight:bold;
-    letter-spacing:2px;
-    opacity:.8;
 
 }
 
 
-/* =========================
-   WORD CENTER
-========================= */
 
 #word {
 
     flex:1;
 
-    width:100%;
-
     display:flex;
-    justify-content:center;
+
     align-items:center;
 
-    padding:20px;
+    justify-content:center;
 
     font-size:clamp(45px,8vw,90px);
-    font-weight:300;
-    line-height:1.15;
-    text-align:center;
-
-    overflow-wrap:anywhere;
 
 }
 
 
-/* =========================
-   BUTTON
-========================= */
 
 #flipBtn {
 
-    margin-bottom:15px;
-
-    padding:10px 26px;
+    padding:10px 30px;
 
     font-size:22px;
 
-    border:none;
     border-radius:15px;
+
+    border:none;
 
     cursor:pointer;
 
-    background:rgba(255,255,255,.3);
-
-    color:inherit;
-
-    backdrop-filter:blur(8px);
-
-    transition:.15s;
-
-}
-
-#flipBtn:hover {
-
-    transform:scale(1.03);
-
-}
-
-#flipBtn:active {
-
-    transform:scale(.97);
-
 }
 
 
-/* =========================
-   COUNTER
-========================= */
 
 #counter {
 
-    width:100%;
-
-    text-align:center;
-
-    font-size:16px;
-
-    font-weight:300;
-
-    margin-bottom:20px;
+    margin:20px;
 
 }

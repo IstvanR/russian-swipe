@@ -1,342 +1,233 @@
-/* =========================
-   STATE
-========================= */
-
 let words = [];
+
 let index = 0;
 
-// true = magyar
-// false = orosz
 let showHungarian = true;
 
 
-/* =========================
-   MENU
-========================= */
 
 const menuBtn = document.getElementById("menuBtn");
+
 const menuPanel = document.getElementById("menuPanel");
 
-menuBtn.addEventListener("click", () => {
+
+
+menuBtn.onclick = () => {
 
     menuPanel.classList.toggle("hidden");
 
-    if (!menuPanel.classList.contains("hidden")) {
-        openTab("gotoTab");
-    }
-
-});
+};
 
 
-/* =========================
-   TABS
-========================= */
 
-function openTab(tabId) {
+function openTab(id){
 
-    document.querySelectorAll(".menuTab").forEach(tab => {
+    document.querySelectorAll(".menuTab")
+    .forEach(x=>x.classList.add("hidden"));
 
-        tab.classList.add("hidden");
 
-    });
-
-    document.getElementById(tabId).classList.remove("hidden");
+    document.getElementById(id)
+    .classList.remove("hidden");
 
 }
 
 
-/* =========================
-   GO TO PAGE
-========================= */
 
-function goToPage() {
-
-    const input = document.getElementById("pageInput");
-
-    let page = parseInt(input.value);
-
-    if (isNaN(page)) return;
-
-    page--;
-
-    if (page < 0) return;
-    if (page >= words.length) return;
-
-    index = page;
-    showHungarian = true;
-
-    render();
-
-    menuPanel.classList.add("hidden");
-
-}
+function render(){
 
 
-/* =========================
-   CONTENTS
-========================= */
-
-function jumpTo(page) {
-
-    if (page < 0) return;
-    if (page >= words.length) return;
-
-    index = page;
-    showHungarian = true;
-
-    render();
-
-    menuPanel.classList.add("hidden");
-
-}
+    if(words.length===0)
+        return;
 
 
-/* =========================
-   FLIP
-========================= */
-
-document.getElementById("flipBtn").addEventListener("click", () => {
-
-    showHungarian = !showHungarian;
-
-    render();
-
-});
+    let item = words[index];
 
 
-/* =========================
-   RENDER
-========================= */
+    if(showHungarian){
 
-function render() {
+        document.getElementById("languageLabel").innerText="MAGYAR";
 
-    if (words.length === 0) return;
+        document.getElementById("word").innerText=item.hu;
 
-    const bg = randomColor();
-    const textColor = getContrastColor(bg);
-
-    document.body.style.background = bg;
-    document.body.style.color = textColor;
-
-    const label = document.getElementById("languageLabel");
-    const word = document.getElementById("word");
-    const btn = document.getElementById("flipBtn");
-
-    if (showHungarian) {
-
-        label.innerText = "MAGYAR";
-        word.innerText = words[index].hu;
-        btn.innerText = "Mutasd az oroszt";
-
-    } else {
-
-        label.innerText = "РУССКИЙ";
-        word.innerText = words[index].ru;
-        btn.innerText = "Mutasd a magyart";
+        document.getElementById("flipBtn").innerText=
+        "Mutasd az oroszt";
 
     }
 
-    document.getElementById("counter").innerText =
-        (index + 1) + " / " + words.length;
+    else{
 
-}
 
+        document.getElementById("languageLabel").innerText="РУССКИЙ";
 
-/* =========================
-   RANDOM COLOR
-========================= */
 
-function randomColor() {
+        document.getElementById("word").innerText=item.ru;
 
-    const hue = Math.floor(Math.random() * 360);
 
-    return `hsl(${hue},80%,50%)`;
-
-}
-
-
-/* =========================
-   TEXT COLOR
-========================= */
-
-function getContrastColor(hslColor) {
-
-    const temp = document.createElement("div");
-
-    temp.style.color = hslColor;
-
-    document.body.appendChild(temp);
-
-    const rgb = getComputedStyle(temp).color;
-
-    document.body.removeChild(temp);
-
-    const values = rgb.match(/\d+/g);
-
-    const r = parseInt(values[0]);
-    const g = parseInt(values[1]);
-    const b = parseInt(values[2]);
-
-    const luminance =
-        0.299 * r +
-        0.587 * g +
-        0.114 * b;
-
-    return luminance > 140 ? "#000000" : "#FFFFFF";
-
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-function next() {
-
-    if (index >= words.length - 1)
-        return;
-
-    index++;
-
-    render();
-
-}
-
-
-function prev() {
-
-    if (index <= 0)
-        return;
-
-    index--;
-
-    render();
-
-}
-
-
-/* =========================
-   SWIPE
-========================= */
-
-let startY = 0;
-
-function handleSwipe(endY) {
-
-    const diff = startY - endY;
-
-    if (Math.abs(diff) < 50)
-        return;
-
-    if (diff > 0)
-        next();
-    else
-        prev();
-
-}
-
-
-/* =========================
-   TOUCH
-========================= */
-
-document.addEventListener("touchstart", e => {
-
-    startY = e.touches[0].clientY;
-
-});
-
-document.addEventListener("touchend", e => {
-
-    handleSwipe(e.changedTouches[0].clientY);
-
-});
-
-
-/* =========================
-   MOUSE
-========================= */
-
-document.addEventListener("mousedown", e => {
-
-    startY = e.clientY;
-
-});
-
-document.addEventListener("mouseup", e => {
-
-    handleSwipe(e.clientY);
-
-});
-
-
-/* =========================
-   KEYBOARD
-========================= */
-
-document.addEventListener("keydown", e => {
-
-    switch (e.key) {
-
-        case "ArrowUp":
-            prev();
-            break;
-
-        case "ArrowDown":
-            next();
-            break;
-
-        case " ":
-        case "Enter":
-            e.preventDefault();
-            showHungarian = !showHungarian;
-            render();
-            break;
+        document.getElementById("flipBtn").innerText=
+        "Mutasd a magyart";
 
     }
 
-});
+
+    document.getElementById("counter").innerText=
+    `${index+1} / ${words.length}`;
+
+}
 
 
-/* =========================
-   CSV LOAD
-========================= */
 
-fetch("words.csv")
-    .then(res => res.text())
-    .then(text => {
+document.getElementById("flipBtn").onclick=()=>{
 
-        const results = Papa.parse(text, {
 
-            header: false,
-            skipEmptyLines: true
+    showHungarian=!showHungarian;
 
-        });
+    render();
 
-        words = results.data
-            .filter(row => row.length >= 3)
-            .map(row => ({
+};
 
-                id: parseInt(row[0]),
 
-                hu: row[1].trim(),
 
-                ru: row[2].trim()
 
-            }));
+function next(){
 
-        index = 0;
+    if(index < words.length-1){
 
-        showHungarian = true;
+        index++;
+
+        showHungarian=true;
 
         render();
 
-    })
-    .catch(err => {
+    }
 
-        console.error(err);
+}
 
-        document.getElementById("word").innerText =
-            "Nem sikerült betölteni a words.csv fájlt.";
 
+
+function prev(){
+
+    if(index>0){
+
+        index--;
+
+        showHungarian=true;
+
+        render();
+
+    }
+
+}
+
+
+
+
+function goToPage(){
+
+
+    let p=parseInt(
+        document.getElementById("pageInput").value
+    );
+
+
+    if(!isNaN(p)){
+
+        index=p-1;
+
+        render();
+
+        menuPanel.classList.add("hidden");
+
+    }
+
+}
+
+
+
+
+function jumpTo(p){
+
+    index=p;
+
+    render();
+
+    menuPanel.classList.add("hidden");
+
+}
+
+
+
+
+
+
+document.addEventListener("keydown",e=>{
+
+
+    if(e.key==="ArrowDown")
+        next();
+
+
+    if(e.key==="ArrowUp")
+        prev();
+
+
+    if(e.key===" ")
+    {
+
+        showHungarian=!showHungarian;
+
+        render();
+
+    }
+
+
+});
+
+
+
+
+
+
+fetch("words.csv")
+
+.then(r=>r.text())
+
+.then(text=>{
+
+
+    console.log(text);
+
+
+    let data=Papa.parse(text,{
+        skipEmptyLines:true
     });
+
+
+    words=data.data.map(row=>({
+
+        id:row[0],
+
+        hu:row[1],
+
+        ru:row[2]
+
+    }));
+
+
+    console.log(words);
+
+
+    render();
+
+
+})
+
+.catch(e=>{
+
+
+    console.error(e);
+
+
+    document.getElementById("word").innerText=
+    "CSV betöltési hiba";
+
+});

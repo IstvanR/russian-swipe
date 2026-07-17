@@ -1,130 +1,134 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Russian Swipe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+
 <body>
 
-    <!-- =========================
-         HAMBURGER
-    ========================== -->
 
-    <div id="menuBtn">
-        ☰
-    </div>
+<div id="menuBtn">
+    ☰
+</div>
 
-    <!-- =========================
-         MENU
-    ========================== -->
 
-    <div id="menuPanel" class="hidden">
+<div id="menuPanel" class="hidden">
 
-        <div id="menuTabs">
 
-            <button onclick="openTab('gotoTab')">
-                Go to page
-            </button>
+    <div id="menuTabs">
 
-            <button onclick="openTab('contentsTab')">
-                Tartalomjegyzék
-            </button>
-
-        </div>
-
-        <!-- =========================
-             GO TO PAGE
-        ========================== -->
-
-        <div id="gotoTab" class="menuTab">
-
-            <div class="menu-item">
-
-                <label>
-                    Go to page
-                </label>
-
-                <input
-                    id="pageInput"
-                    type="number"
-                    min="1">
-
-                <button onclick="goToPage()">
-                    Go
-                </button>
-
-            </div>
-
-        </div>
-
-        <!-- =========================
-             CONTENTS
-        ========================== -->
-
-        <div id="contentsTab" class="menuTab hidden">
-
-            <div id="contentsList">
-
-                <button onclick="jumpTo(0)">
-                    1 - Alap szavak
-                </button>
-
-                <button onclick="jumpTo(932)">
-                    932 - Szókártyák
-                </button>
-
-                <button onclick="jumpTo(1097)">
-                    1097 - Kávé 1.
-                </button>
-
-                <button onclick="jumpTo(1151)">
-                    1151 - Kávé 2.
-                </button>
-
-                <button onclick="jumpTo(1173)">
-                    1173 - Kávé 3.
-                </button>
-
-                <button onclick="jumpTo(1206)">
-                    1206 - Kávé 4.
-                </button>
-
-                <button onclick="jumpTo(1219)">
-                    1219 - Kávé 5.
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- =========================
-         CARD
-    ========================== -->
-
-    <div id="card">
-
-        <div id="languageLabel">
-            Magyar
-        </div>
-
-        <div id="word">
-            Betöltés...
-        </div>
-
-        <button id="flipBtn">
-            Mutasd az oroszt
+        <button onclick="openTab('gotoTab')">
+            Go to page
         </button>
 
-        <!-- =========================
-             COUNTER
-        ========================== -->
 
-        <div id="counter">
-            0 / 0
-        </div>
+        <button onclick="openTab('contentsTab')">
+            Tartalomjegyzék
+        </button>
 
     </div>
 
-    <!-- =========================
-         APP
-    ========================== -->
 
-    <script src="app.js"></script>
+
+    <div id="gotoTab" class="menuTab">
+
+
+        <label>
+            Go to page
+        </label>
+
+
+        <input id="pageInput" type="number" min="1">
+
+
+        <button onclick="goToPage()">
+            Go
+        </button>
+
+
+    </div>
+
+
+
+
+    <div id="contentsTab" class="menuTab hidden">
+
+
+        <div id="contentsList">
+
+
+            <button onclick="jumpTo(0)">
+                1 - Alap szavak
+            </button>
+
+
+            <button onclick="jumpTo(932)">
+                932 - Szókártyák
+            </button>
+
+
+            <button onclick="jumpTo(1097)">
+                1097 - Kávé 1.
+            </button>
+
+
+            <button onclick="jumpTo(1151)">
+                1151 - Kávé 2.
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<div id="card">
+
+
+    <div id="languageLabel">
+        MAGYAR
+    </div>
+
+
+    <div id="word">
+        Betöltés...
+    </div>
+
+
+    <button id="flipBtn">
+        Mutasd az oroszt
+    </button>
+
+
+    <div id="counter">
+        0 / 0
+    </div>
+
+
+</div>
+
+
+
+<script src="app.js"></script>
+
 
 </body>
+
+</html>
