@@ -1,27 +1,32 @@
+/* =========================
+   GLOBAL
+========================= */
+
 * {
     box-sizing:border-box;
 }
 
 
+html,
 body {
 
     margin:0;
 
-    height:100vh;
+    width:100%;
+    height:100%;
 
-    display:flex;
+    overflow:hidden;
 
-    justify-content:center;
+    touch-action:none;
 
-    align-items:center;
-
-    font-family:Arial,sans-serif;
-
-    transition:.3s;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
 
+/* =========================
+   HIDDEN
+========================= */
 
 .hidden {
 
@@ -31,7 +36,9 @@ body {
 
 
 
-/* MENU */
+/* =========================
+   MENU BUTTON
+========================= */
 
 #menuBtn {
 
@@ -41,31 +48,67 @@ body {
 
     left:20px;
 
-    font-size:35px;
+    z-index:1000;
+
+
+    font-size:38px;
+
+    line-height:1;
 
     cursor:pointer;
+
+    user-select:none;
 
 }
 
 
 
+/* =========================
+   MENU PANEL
+========================= */
+
 #menuPanel {
 
     position:fixed;
 
-    top:70px;
+    top:75px;
 
     left:20px;
 
+    z-index:999;
+
+
+    width:260px;
+
     padding:20px;
 
-    background:white;
+
+    background:rgba(255,255,255,0.95);
 
     color:black;
 
-    border-radius:15px;
 
-    z-index:10;
+    border-radius:18px;
+
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.3);
+
+}
+
+
+
+/* =========================
+   MENU TABS
+========================= */
+
+#menuTabs {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
 
 }
 
@@ -73,110 +116,339 @@ body {
 
 #menuPanel button {
 
-    display:block;
+    width:100%;
 
-    width:200px;
+    padding:12px;
 
-    margin:8px;
 
-    padding:10px;
+    font-size:18px;
 
-    color:black;
-
-    background:#eee;
 
     border:none;
 
-    border-radius:8px;
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    background:#eeeeee;
+
+    color:#000;
+
 
 }
 
 
 
-#menuPanel input {
+#menuPanel button:active {
 
-    width:100px;
+    transform:scale(.96);
+
+}
+
+
+
+#gotoTab,
+#contentsTab {
+
+    margin-top:20px;
+
+}
+
+
+
+#pageInput {
+
+    width:100%;
+
+    padding:10px;
+
+    margin:10px 0;
+
+
+    font-size:18px;
 
 }
 
 
 
 
-/* CARD */
-
-
-#card {
-
-    width:90%;
-
-    max-width:900px;
-
-    height:85dvh;
+#contentsList {
 
     display:flex;
 
     flex-direction:column;
 
-    align-items:center;
-
-    text-align:center;
+    gap:8px;
 
 }
 
 
 
-#languageLabel {
 
-    height:70px;
+
+
+/* =========================
+   CARD
+========================= */
+
+#card {
+
+
+    width:90%;
+
+    max-width:900px;
+
+
+    height:85dvh;
+
 
     display:flex;
 
+    flex-direction:column;
+
+
     align-items:center;
 
+
+    text-align:center;
+
+
+    user-select:none;
+
+
+}
+
+
+
+
+/* =========================
+   LANGUAGE LABEL
+========================= */
+
+
+#languageLabel {
+
+
+    width:100%;
+
+
+    height:70px;
+
+
+    display:flex;
+
     justify-content:center;
+
+    align-items:center;
+
 
     font-size:28px;
 
     font-weight:bold;
 
+
+    letter-spacing:2px;
+
+
+    opacity:.85;
+
+
 }
 
+
+
+
+
+/* =========================
+   WORD
+========================= */
 
 
 #word {
 
+
     flex:1;
+
+
+    width:100%;
+
 
     display:flex;
 
-    align-items:center;
 
     justify-content:center;
 
-    font-size:clamp(45px,8vw,90px);
+
+    align-items:center;
+
+
+
+    padding:20px;
+
+
+
+    font-size:
+    clamp(45px,8vw,90px);
+
+
+
+    font-weight:300;
+
+
+
+    line-height:1.15;
+
+
+    text-align:center;
+
+
+    overflow-wrap:anywhere;
+
 
 }
 
+
+
+
+
+
+/* =========================
+   FLIP BUTTON
+========================= */
 
 
 #flipBtn {
 
-    padding:10px 30px;
+
+    margin-bottom:15px;
+
+
+    padding:12px 28px;
+
 
     font-size:22px;
 
-    border-radius:15px;
+
 
     border:none;
 
+
+    border-radius:16px;
+
+
+
     cursor:pointer;
+
+
+
+    background:
+    rgba(255,255,255,.35);
+
+
+
+    color:inherit;
+
+
+
+    backdrop-filter:blur(8px);
+
+
+
+    transition:.15s;
+
 
 }
 
 
 
+#flipBtn:hover {
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+#flipBtn:active {
+
+
+    transform:scale(.95);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   COUNTER
+========================= */
+
+
 #counter {
 
-    margin:20px;
+
+    width:100%;
+
+
+    margin-bottom:20px;
+
+
+
+    text-align:center;
+
+
+    font-size:16px;
+
+
+    opacity:.8;
+
+
+}
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:600px){
+
+
+    #card {
+
+        width:95%;
+
+        height:90dvh;
+
+    }
+
+
+
+    #languageLabel {
+
+        font-size:22px;
+
+    }
+
+
+
+    #flipBtn {
+
+        font-size:18px;
+
+    }
+
+
 
 }

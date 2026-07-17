@@ -1,3 +1,7 @@
+/* =========================
+   STATE
+========================= */
+
 let words = [];
 
 let index = 0;
@@ -5,150 +9,101 @@ let index = 0;
 let showHungarian = true;
 
 
+/* =========================
+   MENU
+========================= */
 
 const menuBtn = document.getElementById("menuBtn");
-
 const menuPanel = document.getElementById("menuPanel");
 
 
-
-menuBtn.onclick = () => {
+menuBtn.addEventListener("click", () => {
 
     menuPanel.classList.toggle("hidden");
 
-};
+});
 
 
 
-function openTab(id){
+function openTab(tabId) {
 
     document.querySelectorAll(".menuTab")
-    .forEach(x=>x.classList.add("hidden"));
+        .forEach(tab => {
+
+            tab.classList.add("hidden");
+
+        });
 
 
-    document.getElementById(id)
-    .classList.remove("hidden");
+    document.getElementById(tabId)
+        .classList.remove("hidden");
 
 }
 
 
 
-function render(){
+
+/* =========================
+   PAGE JUMP
+========================= */
 
 
-    if(words.length===0)
+function goToPage() {
+
+
+    const page =
+        parseInt(
+            document.getElementById("pageInput").value
+        );
+
+
+    if(isNaN(page))
         return;
 
 
-    let item = words[index];
+    let newIndex = page - 1;
 
 
-    if(showHungarian){
-
-        document.getElementById("languageLabel").innerText="MAGYAR";
-
-        document.getElementById("word").innerText=item.hu;
-
-        document.getElementById("flipBtn").innerText=
-        "Mutasd az oroszt";
-
-    }
-
-    else{
+    if(newIndex < 0)
+        return;
 
 
-        document.getElementById("languageLabel").innerText="РУССКИЙ";
+    if(newIndex >= words.length)
+        return;
 
 
-        document.getElementById("word").innerText=item.ru;
+    index = newIndex;
 
+    showHungarian = true;
 
-        document.getElementById("flipBtn").innerText=
-        "Mutasd a magyart";
-
-    }
-
-
-    document.getElementById("counter").innerText=
-    `${index+1} / ${words.length}`;
-
-}
-
-
-
-document.getElementById("flipBtn").onclick=()=>{
-
-
-    showHungarian=!showHungarian;
 
     render();
 
-};
 
-
-
-
-function next(){
-
-    if(index < words.length-1){
-
-        index++;
-
-        showHungarian=true;
-
-        render();
-
-    }
+    menuPanel.classList.add("hidden");
 
 }
 
 
 
-function prev(){
-
-    if(index>0){
-
-        index--;
-
-        showHungarian=true;
-
-        render();
-
-    }
-
-}
+function jumpTo(page){
 
 
+    if(page < 0)
+        return;
 
 
-function goToPage(){
+    if(page >= words.length)
+        return;
 
 
-    let p=parseInt(
-        document.getElementById("pageInput").value
-    );
+    index = page;
 
+    showHungarian = true;
 
-    if(!isNaN(p)){
-
-        index=p-1;
-
-        render();
-
-        menuPanel.classList.add("hidden");
-
-    }
-
-}
-
-
-
-
-function jumpTo(p){
-
-    index=p;
 
     render();
+
 
     menuPanel.classList.add("hidden");
 
@@ -158,24 +113,185 @@ function jumpTo(p){
 
 
 
+/* =========================
+   RENDER
+========================= */
+
+
+function render(){
+
+
+    if(words.length === 0)
+        return;
+
+
+
+    const item = words[index];
+
+
+
+    const label =
+        document.getElementById("languageLabel");
+
+
+    const word =
+        document.getElementById("word");
+
+
+    const button =
+        document.getElementById("flipBtn");
+
+
+
+
+    if(showHungarian){
+
+
+        label.innerText = "MAGYAR";
+
+        word.innerText = item.hu;
+
+        button.innerText =
+            "Mutasd az oroszt";
+
+
+    }
+    else{
+
+
+        label.innerText = "РУССКИЙ";
+
+        word.innerText = item.ru;
+
+        button.innerText =
+            "Mutasd a magyart";
+
+
+    }
+
+
+
+
+    document.getElementById("counter")
+        .innerText =
+        `${index+1} / ${words.length}`;
+
+
+}
+
+
+
+
+
+
+/* =========================
+   FLIP BUTTON
+========================= */
+
+
+document
+.getElementById("flipBtn")
+.addEventListener("click",()=>{
+
+
+    showHungarian = !showHungarian;
+
+
+    render();
+
+
+});
+
+
+
+
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+
+function next(){
+
+
+    if(index < words.length-1){
+
+
+        index++;
+
+        showHungarian = true;
+
+        render();
+
+
+    }
+
+
+}
+
+
+
+
+function prev(){
+
+
+    if(index > 0){
+
+
+        index--;
+
+        showHungarian = true;
+
+        render();
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   KEYBOARD
+========================= */
+
 
 document.addEventListener("keydown",e=>{
 
 
-    if(e.key==="ArrowDown")
+    if(e.key==="ArrowDown"){
+
         next();
 
+    }
 
-    if(e.key==="ArrowUp")
+
+    if(e.key==="ArrowUp"){
+
         prev();
 
+    }
 
-    if(e.key===" ")
-    {
 
-        showHungarian=!showHungarian;
+    if(e.key===" " || e.key==="Enter"){
+
+
+        e.preventDefault();
+
+
+        showHungarian =
+            !showHungarian;
+
 
         render();
+
 
     }
 
@@ -187,47 +303,234 @@ document.addEventListener("keydown",e=>{
 
 
 
+
+/* =========================
+   SWIPE
+========================= */
+
+
+let startY = 0;
+
+let startX = 0;
+
+
+
+document.addEventListener(
+"touchstart",
+e=>{
+
+
+    startY =
+    e.touches[0].clientY;
+
+
+    startX =
+    e.touches[0].clientX;
+
+
+},
+{passive:true}
+);
+
+
+
+
+document.addEventListener(
+"touchend",
+e=>{
+
+
+    let endY =
+    e.changedTouches[0].clientY;
+
+
+    let endX =
+    e.changedTouches[0].clientX;
+
+
+
+    let diffY =
+    startY - endY;
+
+
+
+    let diffX =
+    startX - endX;
+
+
+
+    // túl kicsi mozgás
+
+    if(Math.abs(diffY)<50)
+        return;
+
+
+
+    // oldalirányú swipe
+
+    if(Math.abs(diffX)>Math.abs(diffY))
+        return;
+
+
+
+
+    if(diffY>0){
+
+        next();
+
+    }
+    else{
+
+        prev();
+
+    }
+
+
+},
+{passive:true}
+);
+
+
+
+
+
+
+
+/* =========================
+   MOUSE SWIPE
+========================= */
+
+
+let mouseStartY = 0;
+
+
+
+document.addEventListener(
+"mousedown",
+e=>{
+
+
+    mouseStartY = e.clientY;
+
+
+});
+
+
+
+document.addEventListener(
+"mouseup",
+e=>{
+
+
+    let diff =
+    mouseStartY - e.clientY;
+
+
+
+    if(Math.abs(diff)<50)
+        return;
+
+
+
+    if(diff>0){
+
+        next();
+
+    }
+    else{
+
+        prev();
+
+    }
+
+
+});
+
+
+
+
+
+
+
+/* =========================
+   CSV LOAD
+========================= */
+
+
 fetch("words.csv")
 
-.then(r=>r.text())
+.then(response=>{
+
+
+    if(!response.ok){
+
+        throw new Error(
+            "words.csv nem található"
+        );
+
+    }
+
+
+    return response.text();
+
+
+})
 
 .then(text=>{
 
 
-    console.log(text);
+    const result =
+        Papa.parse(
+            text,
+            {
+                skipEmptyLines:true
+            }
+        );
 
 
-    let data=Papa.parse(text,{
-        skipEmptyLines:true
-    });
 
+    words =
+    result.data
+    .filter(row=>row.length>=3)
+    .map(row=>({
 
-    words=data.data.map(row=>({
 
         id:row[0],
 
-        hu:row[1],
 
-        ru:row[2]
+        hu:row[1].trim(),
+
+
+        ru:row[2].trim()
+
 
     }));
 
 
-    console.log(words);
+
+    console.log(
+        "Betöltött szavak:",
+        words.length
+    );
+
 
 
     render();
 
 
+
 })
 
-.catch(e=>{
+.catch(error=>{
 
 
-    console.error(e);
+    console.error(error);
 
 
-    document.getElementById("word").innerText=
+
+    document.getElementById("word")
+    .innerText =
     "CSV betöltési hiba";
+
 
 });
