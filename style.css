@@ -71,7 +71,7 @@ body {
 
     position:fixed;
 
-    top:10px;
+    top:60px;
 
     left:10px;
 
@@ -447,7 +447,7 @@ body {
 
         font-size:18px;
 
-        transform:translateY(36px);
+        transform:translateY(72px);
 
     }
 
@@ -455,7 +455,7 @@ body {
 
     #counter {
 
-        transform:translateY(36px);
+        transform:translateY(72px);
 
     }
 
