@@ -1,1254 +1,1281 @@
-0,hu,ru
-1,tenger,море
-2,nap (égitest),солнце
-3,úszni,плавать
-4,pohár,стакан
-5,üveg,бутылка
-6,szkázka,сказка
-7,szó,слово
-8,menyasszony,невеста
-9,ég,небо
-10,hallgatni,слушать
-11,haj,волосы
-12,póló,футболка
-13,komoly,серьёзный
-14,lehetséges,возможный
-15,de,но
-16,szezon,сезон
-17,sorozat,сериал
-18,élet,жизнь
-19,sikerült,получилось
-20,boldog,счастливый
-21,nyugdíjas,пенсионер
-22,tanuló,ученик
-23,könyvelő,бухгалтер
-24,építész,архитектор
-25,művész,художник
-26,főz,готовит
-27,ha,если
-28,ing,рубашка
-29,karóra,наручные часы
-30,én,я
-31,te,ты
-32,ő,он/она
-33,mi,мы
-34,ti,вы
-35,ők,они
-36,menni,идти
-37,valamin,на чём-либо
-38,roller,самокат
-39,menü,меню
-40,fagyi,мороженое
-41,torta,торт
-42,tréfás,шутливый
-43,tréfacsináló,шутник
-44,ravasz,хитрый
-45,mint,как
-46,róka,лиса
-47,játékos (mn.),игривый
-48,villa,вилка
-49,mappa,папка
-50,medve,медведь
-51,egér,мышь
-52,bejárat,вход
-53,élesztő,дрожжи
-54,kilépő (utolsó ital),посошок
-55,gyümölcs,фрукт
-56,zöldség,овощ
-57,sál,шарф
-58,ritka,редкий
-59,jegy,билет
-60,már,уже
-61,keskeny,узкий
-62,lila,фиолетовый
-63,ugyanaz,тот же
-64,másik,другой
-65,sok,много
-66,több,больше
-67,legtöbb,большинство
-68,mosolyog,улыбается
-69,nejlon,нейлон
-70,Oroszország,Россия
-71,otthon,дома
-72,hazafelé,домой
-73,otthonról,из дома
-74,drága (kedves ember),дорогой
-75,hó,снег
-76,fácán,фазан
-77,fizika,физика
-78,jönni,приходить
-79,munka,работа
-80,bolt,магазин
-81,sétálni,гулять
-82,edzeni,тренироваться
-83,megérint,трогает
-84,inni,пить
-85,enni,есть
-86,aludni,спать
-87,benzinkút,автозаправка
-88,szia,привет
-89,igen,да
-90,nem,нет
-91,kacsa,утка
-92,macska,кошка
-93,erdő,лес
-94,fű,трава
-95,út,дорога
-96,előre,вперёд
-97,balra,налево
-98,jobbra,направо
-99,hátra,назад
-100,felfelé,вверх
-101,lefelé,вниз
-102,nézni,смотреть
-103,kéz,рука
-104,hát,спина
-105,fül,ухо
-106,szem,глаз
-107,fej,голова
-108,szív,сердце
-109,száj,рот
-110,izom,мышца
-111,orr,нос
-112,váll,плечо
-113,bőr,кожа
-114,fog,зуб
-115,anya,мать
-116,apa,отец
-117,lánytestvér,сестра
-118,fiútestvér,брат
-119,holnap,завтра
-120,reggeli,завтрак
-121,tegnap,вчера
-122,hétvége,выходные
-123,hét (7 nap),неделя
-124,hétfő,понедельник
-125,kedd,вторник
-126,szerda,среда
-127,csütörtök,четверг
-128,péntek,пятница
-129,szombat,суббота
-130,vasárnap,воскресенье
-131,szabadnap,выходной
-132,jó,хороший
-133,ablak,окно
-134,nekem,мне
-135,neked,тебе
-136,neki,ему/ей
-137,nekünk,нам
-138,nektek,вам
-139,nekik,им
-140,szeretni,любить
-141,szőnyeg,ковёр
-142,kanapé,диван
-143,szék,стул
-144,asztal,стол
-145,föderális,федеральный
-146,biztonság,безопасность
-147,szolgálat,служба
-148,pepecselő,копуша
-149,tészta,макароны
-150,sajt,сыр
-151,gomba,гриб
-152,sonka,ветчина
-153,reszelő,тёрка
-154,hol,где
-155,só,соль
-156,hónap,месяц
-157,sziget,остров
-158,ló,лошадь
-159,kanál,ложка
-160,fehér,белый
-161,fekete,чёрный
-162,kék,синий
-163,zöld,зелёный
-164,barna,коричневый
-165,egy,один
-166,kettő,два
-167,három,три
-168,négy,четыре
-169,öt,пять
-170,hat,шесть
-171,hét,семь
-172,nyolc,восемь
-173,kilenc,девять
-174,tíz,десять
-175,tizenegy,одиннадцать
-176,tizenkettő,двенадцать
-177,tizenhárom,тринадцать
-178,tizennégy,четырнадцать
-179,tizenöt,пятнадцать
-180,tizenhat,шестнадцать
-181,tizenhét,семнадцать
-182,tizennyolc,восемнадцать
-183,tizenkilenc,девятнадцать
-184,húsz,двадцать
-185,harminc,тридцать
-186,negyven,сорок
-187,ötven,пятьдесят
-188,hatvan,шестьдесят
-189,hetven,семьдесят
-190,nyolcvan,восемьдесят
-191,kilencven,девяносто
-192,száz,сто
-193,ezer,тысяча
-194,millió,миллион
-195,fal,стена
-196,nagy,большой
-197,hosszú,длинный
-198,fáradt,уставший
-199,bajusz,усы
-200,tudni,знать
-201,gyors,быстрый
-202,várni,ждать
-203,telefon,телефон
-204,óra (időtartam),час
-205,bor,вино
-206,perc,минута
-207,sör,пиво
-208,dácsa,дача
-209,vicc,анекдот
-210,örül,радуется
-211,mert,потому что
-212,gyűrű,кольцо
-213,zuhany,душ
-214,gél,гель
-215,húsz éves vagyok,мне двадцать лет
-216,lakás,квартира
-217,nem messze,недалеко
-218,most,сейчас
-219,keresztnév,имя
-220,vezetéknév,фамилия
-221,születési hely,место рождения
-222,lakóhely,место жительства
-223,cím,адрес
-224,születési dátum,дата рождения
-225,telefonszám,номер телефона
-226,családi állapot,семейное положение
-227,házas (férfi),женат
-228,házas (nő),замужем
-229,engedje meg,разрешите
-230,mennyi,сколько
-231,nagyon örvendek,очень приятно
-232,lecke,урок
-233,olvasni,читать
-234,meleg,тёплый
-235,tej,молоко
-236,kenyér,хлеб
-237,színház,театр
-238,hűtőszekrény,холодильник
-239,büszke,гордый
-240,lehetetlen,невозможно
-241,múlt,прошлое
-242,jelen (igeidő),настоящее время
-243,jövő,будущее
-244,törvény,закон
-245,regionális,региональный
-246,szervezet,организация
-247,szituáció,ситуация
-248,új,новый
-249,újra,снова
-250,alap,основа
-251,egyértelmű,ясный
-252,időjárás,погода
-253,szoba,комната
-254,madár,птица
-255,védelem,защита
-256,semmi,ничего
-257,senki,никто
-258,soha,никогда
-259,sehol,нигде
-260,kísérlet,эксперимент
-261,hal,рыба
-262,halkan,тихо
-263,óvatosan,осторожно
-264,kész,готов
-265,tervezni,планировать
-266,probléma,проблема
-267,ünnepnap,праздник
-268,utca,улица
-269,kimenni,выйти
-270,valahova,куда-нибудь
-271,valamikor,когда-нибудь
-272,valaki,кто-нибудь
-273,valahol,где-нибудь
-274,mióta,с каких пор
-275,sajnálom,мне жаль
-276,mindenekelőtt,прежде всего
-277,vékony,тонкий
-278,vastag,толстый
-279,napozni,загорать
-280,benzin,бензин
-281,kábel,кабель
-282,megbánni,пожалеть
-283,gáz,газ
-284,születésnap,день рождения
-285,szakértő,эксперт
-286,felszabadít,освобождает
-287,egyszerű,простой
-288,üres,пустой
-289,kovács,кузнец
-290,nehéz,трудный
-291,bonyolult,сложный
-292,könnyű,лёгкий
-293,után,после
-294,előtt,перед
-295,oldal,сторона
-296,zavarni,мешать
-297,zab,овёс
-298,függöny,занавеска
-299,vásárolni,покупать
-300,ide,сюда
-301,javítani,ремонтировать
-302,azért, hogy,чтобы
-303,keresni,искать
-304,információ,информация
-305,tiltott,запрещённый
-306,szekta,секта
-307,mennyibe kerül,сколько стоит
-308,készpénz,наличные
-309,korábban,раньше
-310,felirat,надпись
-311,kinek,кому
-312,nekem,мне
-313,neked,тебе
-314,neki,ему/ей
-315,nekünk,нам
-316,nektek,вам
-317,nekik,им
-318,motoros utazás,мотопутешествие
-319,ott,там
-320,aztán,потом
-321,terem,зал
-322,zálog,залог
-323,bár,бар
-324,klub,клуб
-325,őrült,сумасшедший
-326,öreg,старый
-327,magas,высокий
-328,gonosz,злой
-329,forró,горячий
-330,híres,знаменитый
-331,legvégül,в конце концов
-332,valamin kívül,кроме
-333,én is ugyanúgy,я тоже
-334,nyelv,язык
-335,összesen,всего
-336,közlekedési dugó,пробка
-337,szénsavas ásványvíz,газированная минеральная вода
-338,finom,вкусный
-339,centiméter,сантиметр
-340,bunker,бункер
-341,csillagász,астроном
-342,elemezni,анализировать
-343,szerep,роль
-344,koalíció,коалиция
-345,utópia,утопия
-346,perspektíva,перспектива
-347,terület,территория
-348,anyag,материал
-349,karakter,характер
-350,jelleg,характеристика
-351,jelölt,кандидат
-352,szervező,организатор
-353,pánik,паника
-354,panoráma,панорама
-355,tradícionális,традиционный
-356,konferencia,конференция
-357,idilli,идиллический
-358,kapitalizmus,капитализм
-359,cigaretta,сигарета
-360,kritika,критика
-361,reformátor,реформатор
-362,bombázni,бомбить
-363,egyedülálló,уникальный
-364,pásztor,пастух
-365,rendszer,система
-366,citadella,цитадель
-367,periódus,период
-368,konfliktus,конфликт
-369,adat,данные
-370,dátum,дата
-371,állam,государство
-372,pozíció,позиция
-373,irodalom,литература
-374,rakéta,ракета
-375,tény,факт
-376,számla,счёт
-377,vallás,религия
-378,interjú,интервью
-379,részlet,деталь
-380,márvány,мрамор
-381,napló,дневник
-382,ékszerész,ювелир
-383,vendég,гость
-384,személyzet,персонал
-385,szuvenír,сувенир
-386,prioritás,приоритет
-387,ügyfél,клиент
-388,cirkusz,цирк
-389,katedra,кафедра
-390,intézet,институт
-391,baleset,авария
-392,társaság,компания
-393,négyzet,квадрат
-394,alkotmány,конституция
-395,klasszikus,классический
-396,mágia,магия
-397,kesudió,кешью
-398,internátus,интернат
-399,utas,пассажир
-400,felmosó,швабра
-401,reklám,реклама
-402,pavilon,павильон
-403,fogorvos,стоматолог
-404,festő,художник
-405,vertikális,вертикальный
-406,garancia,гарантия
-407,kozmetikum,косметика
-408,konténer,контейнер
-409,deszka,доска
-410,citrom,лимон
-411,lime,лайм
-412,recept,рецепт
-413,romantikus,романтический
-414,szimbólum,символ
-415,statisztika,статистика
-416,bátor,смелый
-417,előtte,до этого
-418,szükséges,необходимый
-419,kisgyerek,маленький ребёнок
-420,óvoda,детский сад
-421,doktor,врач
-422,újságíró,журналист
-423,ügyvéd,адвокат
-424,menedzser,менеджер
-425,adminisztrátor,администратор
-426,titkárnő,секретарь
-427,asszisztens,ассистент
-428,főnök,начальник
-429,direktor,директор
-430,belsőépítész,дизайнер интерьера
-431,ruha,одежда
-432,tájépítész,ландшафтный архитектор
-433,fodrász,парикмахер
-434,idegenvezető,гид
-435,autószerelő,автомеханик
-436,kolléga,коллега
-437,nővér (egészségügy),медсестра
-438,srác,парень
-439,barát,друг
-440,eladó,продавец
-441,téma,тема
-442,kasszás,кассир
-443,rendőr,полицейский
-444,író,писатель
-445,tudós,учёный
-446,kirándulás,экскурсия
-447,pók,паук
-448,fordító,переводчик
-449,építész,архитектор
-450,takarító,уборщик
-451,banán,банан
-452,mandarin,мандарин
-453,alma,яблоко
-454,narancs,апельсин
-455,ananász,ананас
-456,barack,персик
-457,kiwi,киви
-458,mangó,манго
-459,körte,груша
-460,szőlő,виноград
-461,görögdinnye,арбуз
-462,paradicsom,помидор
-463,cékla,свёкла
-464,káposzta,капуста
-465,répa,морковь
-466,bors,перец
-467,paprika,болгарский перец
-468,uborka,огурец
-469,hagyma,лук
-470,fokhagyma,чеснок
-471,termék,товар
-472,rizs,рис
-473,csokoládé,шоколад
-474,kolbász,колбаса
-475,tzatziki,дзадзики
-476,vaj,сливочное масло
-477,olaj,масло
-478,figyelmeztetés,предупреждение
-479,ezelőtt,до этого
-480,ikra,икра
-481,tojás,яйцо
-482,joghurt,йогурт
-483,kefír,кефир
-484,szósz,соус
-485,dzsúsz,сок
-486,metró,метро
-487,következő állomás,следующая станция
-488,sétány,проспект
-489,autóbusz,автобус
-490,trolibusz,троллейбус
-491,villamos,трамвай
-492,taxi,такси
-493,jegyellenőr,контролёр
-494,sofőr,водитель
-495,vonat,поезд
-496,megálló,остановка
-497,vagon,вагон
-498,kupé,купе
-499,visszafelé,обратно
-500,moha,мох
-501,millió,миллион
-502,variáns,вариант
-503,perc,минута
-504,hajrá!,давай!
-505,újság,газета
-506,hírek,новости
-507,lopni,воровать
-508,thriller,триллер
-509,regény,роман
-510,számtalan,бесчисленный
-511,megsértődött,обиделся
-512,ár,цена
-513,rekord,рекорд
-514,hitel,кредит
-515,hitelkártya,кредитная карта
-516,érem,медаль
-517,kapitány,капитан
-518,kóma,кома
-519,kontinuum,континуум
-520,cég,компания
-521,idealista,идеалист
-522,gyár,завод
-523,bizalmas,конфиденциальный
-524,kvittek vagyunk,мы в расчёте
-525,gesztus,жест
-526,jég,лёд
-527,jégtáncos,фигурист
-528,népesség,население
-529,felkel,встаёт
-530,fáradt,уставший
-531,megtanul,выучит
-532,márka,бренд
-533,tető,крыша
-534,előttem (fizikailag),передо мной
-535,ajtó,дверь
-536,udvar,двор
-537,határ,граница
-538,erről van szó!,вот в чём дело!
-539,érkezés,прибытие
-540,fejezet,глава
-541,úgyszintén,взаимно
-542,régen,давно
-543,messze,далеко
-544,megérkezni,приехать
-545,egyébként,кстати
-546,tegezni,говорить на «ты»
-547,telefonon hívni,позвонить
-548,amíg utazunk,пока мы едем
-549,elmesél,расскажет
-550,mesélj magadról,расскажи о себе
-551,oroszul,по-русски
-552,németül,по-немецки
-553,angolul,по-английски
-554,magyarul,по-венгерски
-555,franciául,по-французски
-556,spanyolul,по-испански
-557,arabul,по-арабски
-558,lengyelül,по-польски
-559,befejezni,закончить
-560,szabadság,отпуск
-561,remélni,надеяться
-562,tanulni,учиться
-563,kultúra,культура
-564,tál,миска
-565,keverék,смесь
-566,röntgen,рентген
-567,kinéz (megjelenés),выглядеть
-568,szimpatikus,симпатичный
-569,jóképű,красивый
-570,olvasni,читать
-571,gondolni,думать
-572,igazi férfi,настоящий мужчина
-573,érezni,чувствовать
-574,együtt,вместе
-575,szilárd,твёрдый
-576,króm,хром
-577,szabályozni,регулировать
-578,naptár,календарь
-579,navigáció,навигация
-580,elektromos ülés (autóban),электрическое сиденье
-581,elvileg,теоретически
-582,center,центр
-583,pillanat,момент
-584,lendület,импульс
-585,tartalék,запас
-586,óriási,огромный
-587,struktúra,структура
-588,egyedi,уникальный
-589,ügynökség,агентство
-590,ajánlani,рекомендовать
-591,neutrális,нейтральный
-592,szerv,орган
-593,elnyomás,угнетение
-594,kormányzó,губернатор
-595,szimbolizálni,символизировать
-596,aktivista,активист
-597,légkör,атмосфера
-598,kabinet,кабинет
-599,ellenzék,оппозиция
-600,parádé,парад
-601,terminál,терминал
-602,vezető (szervezetben),руководитель
-603,innováció,инновация
-604,rizikó,риск
-605,támadás,атака
-606,alapvető,основной
-607,sokkolni,шокировать
-608,sejt,клетка
-609,kémia,химия
-610,valuta,валюта
-611,csúcs,пик
-612,árfolyam,курс
-613,infláció,инфляция
-614,potenciál,потенциал
-615,profil,профиль
-616,lekció,лекция
-617,emóció,эмоция
-618,kikötő,порт
-619,ellen,против
-620,elemzés,анализ
-621,puha,мягкий
-622,modern (időszerű),современный
-623,moduláris,модульный
-624,elegáns,элегантный
-625,link,ссылка
-626,leírás,описание
-627,saját,собственный
-628,teljesen,полностью
-629,srácok,ребята
-630,mutatni,показывать
-631,ittlakó,местный житель
-632,meghitt,уютный
-633,kemény,твёрдый
-634,maradni,оставаться
-635,nemsokáig,недолго
-636,fiatalok,молодёжь
-637,atléta,спортсмен
-638,kabátka,куртка
-639,edzőcipő,кроссовки
-640,ruha,платье
-641,magassarok,высокий каблук
-642,top (ruha),топ
-643,rövidnadrág,шорты
-644,szandál,сандалии
-645,narancssárga,оранжевый
-646,illik rám,мне идёт
-647,válni valamivé,становиться
-648,még nem is látta,ещё не видел
-649,vajon,интересно
-650,kérdezni,спрашивать
-651,esedékes,предстоит
-652,venni (fizikailag),брать
-653,birtokolni,владеть
-654,erő,сила
-655,véletlen,случайность
-656,iroda,офис
-657,öltöny,костюм
-658,nadrág,брюки
-659,nadrág,штаны
-660,farmer,джинсы
-661,zakó,пиджак
-662,nyakkendő,галстук
-663,nagykabát,пальто
-664,kesztyű,перчатки
-665,csizma,сапоги
-666,medence,бассейн
-667,fürdőnadrág,плавки
-668,több,больше
-669,habár,хотя
-670,azonnal,немедленно
-671,teljesen,полностью
-672,kijönni,выйти
-673,válaszolni,отвечать
-674,között,между
-675,találni,находить
-676,megold,решает
-677,emlékezni,помнить
-678,korona,корона
-679,hold,луна
-680,kezdet,начало
-681,remény,надежда
-682,hóvihar,метель
-683,jól vagyok,я в порядке
-684,hiányzol,мне тебя не хватает
-685,elfoglalt vagyok,я занят
-686,kevesebb,меньше
-687,hogy ment?,как прошло?
-688,későn,поздно
-689,házi feladat,домашнее задание
-690,folyamat,процесс
-691,funkció,функция
-692,kézikönyv,руководство
-693,vállalat,предприятие
-694,választ,выбор
-695,gyűjt,собирает
-696,aktuális,актуальный
-697,gyűjtemény,коллекция
-698,konkrét,конкретный
-699,platform,платформа
-700,grandiózus,грандиозный
-701,zászlóshajó,флагман
-702,szedán,седан
-703,kombi,универсал
-704,architektúra,архитектура
-705,méret,размер
-706,nüansz,нюанс
-707,pszichológia,психология
-708,metódus,метод
-709,karakterisztika,характеристика
-710,felelősség,ответственность
-711,luxus,роскошь
-712,anakronizmus,анахронизм
-713,megszállás,оккупация
-714,elkap,поймает
-715,elmenni,уйти
-716,hozzászokni,привыкнуть
-717,élénk sárga,ярко-жёлтый
-718,szemüveg,очки
-719,kulcstartó,брелок
-720,pupillák,зрачки
-721,közelebb,ближе
-722,felhők,облака
-723,lépkedek,шагаю
-724,bolond,сумасшедший
-725,hazudni,лгать
-726,csönd,тишина
-727,tele van,полон
-728,keresztül,через
-729,fájdalom,боль
-730,fölöttem,надо мной
-731,suttog,шепчет
-732,felégetni,сжечь
-733,szakadék,пропасть
-734,ördög,дьявол
-735,kés élén,на острие ножа
-736,elfelejteni,забыть
-737,csupán,лишь
-738,zaj,шум
-739,mögöttem,позади меня
-740,földi,земной
-741,hamu,пепел
-742,megőrül,сойдёт с ума
-743,szabad,свободный
-744,jelenteni,означать
-745,félelem,страх
-746,együtt,вместе
-747,valóság,реальность
-748,alvásban,во сне
-749,ellenségeskedés,вражда
-750,megjósolt,предсказанный
-751,muzsika,музыка
-752,blincsek,блины
-753,vezeték,провод
-754,repülőgép,самолёт
-755,fiatal nő,молодая женщина
-756,tűz,огонь
-757,gépfegyver,пулемёт
-758,olvadni,таять
-759,halasztani,откладывать
-760,ma,сегодня
-761,megmosakodok,умываюсь
-762,reggelizni,завтракать
-763,ebédelni,обедать
-764,vacsorázni,ужинать
-765,bevásárlás,покупки
-766,lezuhanyozni,принять душ
-767,lefekszem aludni,ложусь спать
-768,rakni / tenni,класть
-769,állni,стоять
-770,rájönni,понять
-771,hívni,звать
-772,eljátszani,сыграть
-773,bekapcsolni,включить
-774,kikapcsolni,выключить
-775,kinyitni,открыть
-776,bezárni,закрыть
-777,meghalni,умереть
-778,adó,налог
-779,fülhallgató,наушники
-780,váza,ваза
-781,párna,подушка
-782,lélek,душа
-783,hely,место
-784,álom,сон
-785,takaró,одеяло
-786,belépés,вход
-787,elfogadni,принять
-788,törvényjavaslat,законопроект
-789,kvóta,квота
-790,oktatás,образование
-791,képzés,обучение
-792,támogatás,поддержка
-793,címezni,адресовать
-794,összegyűlt,собрался
-795,oldal,сторона
-796,eredmény,результат
-797,csapat,команда
-798,szavazni,голосовать
-799,országos,общенациональный
-800,bizalom,доверие
-801,keményen,усердно
-802,felelőségteljesen,ответственно
-803,eredményesen,эффективно
-804,erőteljes,мощный
-805,többmilliós,многомиллионный
-806,siker,успех
-807,megőrizni,сохранить
-808,egység,единство
-809,fontos,важный
-810,vonzani,привлекать
-811,haladni,продвигаться
-812,előre,вперёд
-813,éreznünk kell,мы должны чувствовать
-814,könyök,локоть
-815,állampolgár,гражданин
-816,kézenfogva,держась за руки
-817,folyamatában,в процессе
-818,aktuális,актуальный
-819,szempontok,аспекты
-820,cselekedni,действовать
-821,feltétlenül,обязательно
-822,elítélni,осуждать
-823,talicska,тачка
-824,tudatos,осознанный
-825,kezdő,начинающий
-826,pozitív,положительный
-827,negatív,отрицательный
-828,rész,часть
-829,tapasztalat,опыт
-830,gondolat,мысль
-831,felemel,поднимает
-832,készség,навык
-833,képesség,способность
-834,leragadni,застрять
-835,kellemetlenség,неприятность
-836,sértődés,обида
-837,élvezni,наслаждаться
-838,irritáció,раздражение
-839,titkol,скрывает
-840,harag,гнев
-841,nem érdemes,не стоит
-842,cipelni,нести
-843,különböző,различный
-844,lom,хлам
-845,fél,боится
-846,mert,потому что
-847,sebez,ранит
-848,csata,битва
-849,ellenség,враг
-850,önmaga,сам
-851,kicsiben kezdeni,начинать с малого
-852,kancsó,кувшин
-853,rosszakaró,недоброжелатель
-854,határ,граница
-855,koncentrál,концентрируется
-856,felmerül,возникает
-857,vakon,вслепую
-858,születik,рождается
-859,közepesen,умеренно
-860,megbízható,надёжный
-861,türelmetlen,нетерпеливый
-862,becstelen,бесчестный
-863,zajlik,происходит
-864,tárgyalások,переговоры
-865,négyszemközt,с глазу на глаз
-866,kibővített,расширенный
-867,összetétel,состав
-868,részvételével,с участием
-869,megjavítják,исправят
-870,fejlődés,развитие
-871,együttműködés,сотрудничество
-872,irányok,направления
-873,kicserél,заменит
-874,véleményeikkel,своими мнениями
-875,nehézség,трудность
-876,jobb később mint soha,лучше поздно чем никогда
-877,kérdés,вопрос
-878,felmérés,опрос
-879,képkocka,кадр
-880,gyűjtés,сбор
-881,bátor,смелый
-882,attraktív,привлекательный
-883,szép,красивый
-884,aranyos,милый
-885,göndör,кудрявый
-886,hullámos,волнистый
-887,egyenes,прямой
-888,férfi,мужчина
-889,nő,женщина
-890,világos hajú,светловолосый
-891,kopasz,лысый
-892,vékony,стройный
-893,felpróbál,примеряет
-894,aprótermetű,невысокий
-895,szakáll,борода
-896,megfésülködni,причесаться
-897,leírni,описать
-898,nyomás,давление
-899,megegyezőek,одинаковые
-900,igény,потребность
-901,hab,пена
-902,elérni,достичь
-903,kerámia,керамика
-904,autófólia,автомобильная плёнка
-905,kód,код
-906,tartós,долговечный
-907,vezetékes,проводной
-908,kényelmes,удобный
-909,fanatikus,фанатичный
-910,minőség,качество
-911,radiátor,радиатор
-912,tiszta,чистый
-913,elméletileg,теоретически
-914,röviden,кратко
-915,panasz,жалоба
-916,hegeszteni,сваривать
-917,potenciál,потенциал
-918,áru,товар
-919,raklap,поддон
-920,érték (szám),значение
-921,helyreállítani,восстановить
-922,kiadás,издание
-923,kisegítés,помощь
-924,feléleszt,оживляет
-925,megbocsátani,простить
-926,padlás,чердак
-927,összekever,смешает
-928,lényegében,по сути
-929,háziállat,домашнее животное
-930,szétnyitni,раскрыть
-931,ébresztőóra,будильник
-932,felszerelés,оборудование
-933,eszköz,инструмент
-934,elektromos,электрический
-935,hangszóró,динамик
-936,kamera,камера
-937,mosogatógép,посудомоечная машина
-938,mosógép,стиральная машина
-939,sütő,духовка
-940,kávégép,кофемашина
-941,légkondi,кондиционер
-942,fűtőtest,обогреватель
-943,rádió,радио
-944,dvd-lejátszó,DVD-плеер
-945,hajszárító,фен
-946,ventilátor,вентилятор
-947,porszívó,пылесос
-948,vasaló,утюг
-949,távkapcsoló,пульт дистанционного управления
-950,füstérzékelő,датчик дыма
-951,dolgozni,работать
-952,törött,сломанный
-953,használni,использовать
-954,rendszer,система
-955,zseblámpa,фонарик
-956,divat,мода
-957,blúz,блузка
-958,harisnya,колготки
-959,zseb,карман
-960,gomb,пуговица
-961,formaruha,униформа
-962,esernyő,зонт
-963,akszesszoár,аксессуар
-964,napszemüveg,солнцезащитные очки
-965,irattáska,портфель
-966,baseballsapka,бейсболка
-967,karkötő,браслет
-968,tárca,кошелёк
-969,nyaklánc,ожерелье
-970,fülbevaló,серьги
-971,gyűrű,кольцо
-972,parfüm,духи
-973,szűk,узкий
-974,bő,просторный
-975,felpróbál,примерять
-976,felvesz (ruhát),надевать
-977,levesz (ruhát),снимать
-978,átöltözik,переодеваться
-979,sötétség,темнота
-980,világosság,свет
-981,arany,золото
-982,ezüst,серебро
-983,sápadt,бледный
-984,színes,цветной
-985,krémes,кремовый
-986,forma,форма
-987,közép,центр
-988,kör,круг
-989,kereszt,крест
-990,négyzet,квадрат
-991,rombusz,ромб
-992,csillag,звезда
-993,vonal,линия
-994,pont,точка
-995,oldal,сторона
-996,felület,поверхность
-997,lapos,плоский
-998,kerek,круглый
-999,rajzolni,рисовать
-1000,kiszínezni,раскрашивать
-1001,egész,целый
-1002,festmény,картина
-1003,komputer,компьютер
-1004,chat,чат
-1005,laptop,ноутбук
-1006,monitor,монитор
-1007,kijelző,дисплей
-1008,billentyűzet,клавиатура
-1009,egér,мышь
-1010,nyomtató,принтер
-1011,számológép,калькулятор
-1012,felhasználónév,имя пользователя
-1013,jelszó,пароль
-1014,internet,интернет
-1015,posta,почта
-1016,üzenet,сообщение
-1017,videó,видео
-1018,megjegyzés,заметка
-1019,fájl,файл
-1020,dokumentum,документ
-1021,letölt,скачивает
-1022,feltölt,загружает
-1023,megnyom,нажимает
-1024,küld,отправляет
-1025,digitális,цифровой
-1026,kép,изображение
-1027,másolni,копировать
-1028,beilleszteni,вставить
-1029,kurzus,курс
-1030,tárgy,предмет
-1031,szint,уровень
-1032,szemeszter,семестр
-1033,csoporttárs,одногруппник
-1034,partner,партнёр
-1035,szótár,словарь
-1036,vizsga,экзамен
-1037,teszt,тест
-1038,gyakorlat,упражнение
-1039,aktivitás,активность
-1040,probléma,проблема
-1041,megold,решает
-1042,jegy (iskola),оценка
-1043,projekt,проект
-1044,kutatás,исследование
-1045,cikk,статья
-1046,összefoglalás,резюме
-1047,tartalomjegyzék,оглавление
-1048,oldal (könyv),страница
-1049,iskolatábla,доска
-1050,menza,столовая
-1051,lista,список
-1052,jegyzet,конспект
-1053,átmenni a vizsgán,сдать экзамен
-1054,megbukni,провалить экзамен
-1055,jelen lenni,присутствовать
-1056,hiányozni,отсутствовать
-1057,junior,джуниор
-1058,fókuszálni,сосредоточиться
-1059,háziállat,домашнее животное
-1060,bárány,ягнёнок
-1061,teve,верблюд
-1062,tigris,тигр
-1063,bálna,кит
-1064,pingvin,пингвин
-1065,cápa,акула
-1066,bogár,жук
-1067,szúnyog,комар
-1068,krokodil,крокодил
-1069,delfin,дельфин
-1070,róka,лиса
-1071,hörcsög,хомяк
-1072,farok,хвост
-1073,pókháló,паутина
-1074,állatkert,зоопарк
-1075,szarvas,олень
-1076,sas,орёл
-1077,rovar,насекомое
-1078,méhecske,пчела
-1079,pillangó,бабочка
-1080,csótány,таракан
-1081,tehén,корова
-1082,faj,вид
-1083,vad,дикий
-1084,vadászni,охотиться
-1085,lovagol,ездит верхом
-1086,mosoly,улыбка
-1087,megjelenni,появиться
-1088,eldugni,спрятать
-1089,vér,кровь
-1090,csont,кость
-1091,mellkas,грудь
-1092,gerinc,позвоночник
-1093,lélegezni,дышать
-1094,kövér,толстый
-1095,koponya,череп
-1096,minden kezdet nehéz,liha beda nacsalo
-1097,gond,beda
-1098,bemutatkozás,представление
-1099,gyakorlat,uprazsnyenyie
-1100,kozmopolita,космополит
-1101,parazita,паразит
-1102,autómata,автомат
-1103,akrobata,акробат
-1104,bürokrata,бюрократ
-1105,pszichopata,психопат
-1106,tünet,симптом
-1107,tarifa,тариф
-1108,kupola,купол
-1109,anekdóta,анекдот
-1110,gyógyszertár,аптека
-1111,gyógyszerész,фармацевт
-1112,január,январь
-1113,február,февраль
-1114,március,март
-1115,április,апрель
-1116,május,май
-1117,június,июнь
-1118,július,июль
-1119,augusztus,август
-1120,szeptember,сентябрь
-1121,október,октябрь
-1122,november,ноябрь
-1123,december,декабрь
-1124,hatalom,власть
-1125,aláírni,подписать
-1126,kapcsolat,связь
-1127,lánc,цепь
-1128,apróság,мелочь
-1129,hazugság,ложь
-1130,gyász,ckorb
-1131,platform,платформа
-1132,premier,премьера
-1133,karrier,карьера
-1134,pantomim,пантомима
-1135,licensz,лицензия
-1136,elit,элита
-1137,reform,реформа
-1138,kabin,кабина
-1139,brigád,бригада
-1140,blokád,блокада
-1141,terasz,терраса
-1142,ikon,икона
-1143,pánik,паника
-1144,rutin,рутина
-1145,szasszé,шассе
-1146,alibi,алиби
-1147,ragu,рагу
-1148,zsűri,жюри
-1149,esőkabát,плащ
-1150,dió,орех
-1151,félcipő,туфли
-1152,bokacipő,ботинки
-1153,csizma,сапоги
-1154,zokni,носки
-1155,síléc,лыжи
-1156,korcsolya,коньки
-1157,bölcsőde,ясли
-1158,vakáció,каникулы
-1159,spanyol,испанец
-1160,svéd,швед
-1161,lengyel,поляк
-1162,angol,англичанин
-1163,német,немец
-1164,finn,финн
-1165,amerikai,американец
-1166,pilóta,пилот
-1167,matróz,моряк
-1168,esély,шанс
-1169,perspektíva,перспектива
-1170,ünneplünk,мы празднуем
-1171,unokaöccs,племянник
-1172,összetalálkozunk,мы встретимся
-1173,elfoglalt,занятый
-1174,szigorú,строгий
-1175,friss,свежий
-1176,közös,общий
-1177,szoknya,юбка
-1178,első,первый
-1179,második,второй
-1180,harmadik,третий
-1181,negyedik,четвёртый
-1182,ötödik,пятый
-1183,hatodik,шестой
-1184,hetedik,седьмой
-1185,nyolcadik,восьмой
-1186,kilencedik,девятый
-1187,tizedik,десятый
-1188,tizenharmadik,тринадцатый
-1189,huszadik,двадцатый
-1190,negyvenedik,сороковой
-1191,századik,сотый
-1192,ezredik,тысячный
-1193,milliomodik,миллионный
-1194,magassarok,высокий каблук
-1195,viselek,ношу
-1196,köntös,халат
-1197,beszéd,речь
-1198,nagy,большой
-1199,kicsi,маленький
-1200,széles,широкий
-1201,szűk,узкий
-1202,ez rám pont jó,мне как раз
-1203
-1204,fogat mosni,чистить зубы
-1205,keménytojás,варёное яйцо
-1206,elhozni a lányomat,забрать мою дочь
-1207,szörnyen,ужасно
-1208,eső,дождь
-1209,szél,ветер
-1210,elefánt,slon
-1211,fém, metall
-1212,műanyag, plasztik
-1213
-1214
-1215
-1216
-1217,napirend,распорядок дня
-1218,olvasás,чтение
-1219,megjelenés külső,внешностb
-1220,ovális,овальный
-1221,közepesen,средне
-1222,magas,высокий
-1223,magasság,рост
-1224,diétázik,сидеть на диете
-1225,megbízható,надёжный
-1226,türelmetlen,нетерпеливый
-1227,becstelen,непорядочный
-1228,barna szem,карие глаза
-1229,erős testalkatú,крепкого телосложения
-1230,gyakran,часто
-1231,barna hajú férfi,брюнет
-1232,elkésik,опаздывает
-1233,segítőkész,отзывчивый
-1234,humorérzék,чувство юмора
-1235,félelem,страх
-1236,gyógyszer,таблетка
-1237,megbeszélni,обсуждать
-1238,kiadvány,выпуск
-1239,aláírni,подписывать
-1240,ünneplünk,празднуем
-1241,lépésről lépésre,шаг за шагом
-1242,fehérje,белок
-1243,szénhidrát,углевод
-1244,zsír,жир
-1245,ne topogj!,не топай!
-1246,tányér,тарелка
-1247,tartós,прочный
-1248,karcsú,строиная
-1249,arna szem,карие глаза
-1250,társaság lelke,душа компании
-1251,hallás utáni értésбаудирование
-1252,tükör,зеркало
-1253,állandóan,постоянно
+0,Persönliche Meisterschaft,-
+1,önazonosan kvázi-tökéletesen csinálni a fókusztémákat,-
+2,eredmény csak következetes cselekvésből,-
+3,Благодарность: семья здоровье  свобода  безопасность хорошая работа  красивый дом,-
+4,KIJÖVÖK KORLÁTAIMBÓL; laza  nyugodt  felszabadult  inspirált  életvidám = önvaló,-            
+5,NEM AKAROM ROSSZKEDVŰEN KELLETLENÜL TÖLTENI AZ ÉLETEM,-
+6,negatív visszajelzést barátsággal; ha megkérnek megakasztanak full ok; вежливо говорить «нет»; semmiképp ne kelletlenkedjek,-
+7,Не язви  даже если это было бы смешно  не отпускай колкостей,-
+8,nem gond a gyerek hanem öröm,-
+9,a helyes út  meg ha nehezebb is,-
+10,Бунтарь: lázadó rebellis,-
+11,Рекреация / пространство — отпускание — отдых,-
+12,Отличный сон,-
+13,izgulok h sikeruljon vagy elvezem ahogy osszejon?,-
+14,nem szemetelem tele az agyam,-
+15,nem tul onfelaldozo,-
+16,was spass macht aber nicht weiterbringt: fokus ist nicht was du machst, sondern was du nicht machst,-
+17,Я — замечательный муж:,-
+18,mennyit nevetunk???,-
+"19,Похвальные слова: communication, nem baszom fel magam ha akar valamit vagy negatív feedback, vagy ő nem jókedvű,-					"
+20,Качественное время вместе: programmi: randi hobby család,-
+21,Услуги / помощь:,-
+22,Физический контакт; looks, hairs, outfit, posture, breath, action,-
+23,Дарение подарков:,-
+24,Я замечательный atec,-
+25,Я прекрасно работаю,-
+26,Я прекрасно экономлю,-
+27,NINCS ÉTELRENDELÉS!!!,-
+28,NINCS ALKOHOL!!!,-
+29,15% - 85kg - 2027.6,-
+30,Я прекрасно питаюсь,-
+31,Я прекрасно качаюсь,-
+32,hu,ru
+33,tenger,море
+34,nap (égitest),солнце
+35,úszni,плавать
+36,pohár,стакан
+37,üveg,бутылка
+38,szkázka,сказка
+39,szó,слово
+40,menyasszony,невеста
+41,ég,небо
+42,hallgatni,слушать
+43,haj,волосы
+44,póló,футболка
+45,komoly,серьёзный
+46,lehetséges,возможный
+47,de,но
+48,szezon,сезон
+49,sorozat,сериал
+50,élet,жизнь
+51,sikerült,получилось
+52,boldog,счастливый
+53,nyugdíjas,пенсионер
+54,tanuló,ученик
+55,könyvelő,бухгалтер
+56,építész,архитектор
+57,művész,художник
+58,főz,готовит
+59,ha,если
+60,ing,рубашка
+61,karóra,наручные часы
+62,én,я
+63,te,ты
+64,ő,он/она
+65,mi,мы
+66,ti,вы
+67,ők,они
+68,menni,идти
+69,valamin,на чём-либо
+70,roller,самокат
+71,menü,меню
+72,fagyi,мороженое
+73,torta,торт
+74,tréfás,шутливый
+75,tréfacsináló,шутник
+76,ravasz,хитрый
+77,mint,как
+78,róka,лиса
+79,játékos (mn.),игривый
+80,villa,вилка
+81,mappa,папка
+82,medve,медведь
+83,egér,мышь
+84,bejárat,вход
+85,élesztő,дрожжи
+86,kilépő (utolsó ital),посошок
+87,gyümölcs,фрукт
+88,zöldség,овощ
+89,sál,шарф
+90,ritka,редкий
+91,jegy,билет
+92,már,уже
+93,keskeny,узкий
+94,lila,фиолетовый
+95,ugyanaz,тот же
+96,másik,другой
+97,sok,много
+98,több,больше
+99,legtöbb,большинство
+100,mosolyog,улыбается
+101,nejlon,нейлон
+102,Oroszország,Россия
+103,otthon,дома
+104,hazafelé,домой
+105,otthonról,из дома
+106,drága (kedves ember),дорогой
+107,hó,снег
+108,fácán,фазан
+109,fizika,физика
+110,jönni,приходить
+111,munka,работа
+112,bolt,магазин
+113,sétálni,гулять
+114,edzeni,тренироваться
+115,megérint,трогает
+116,inni,пить
+117,enni,есть
+118,aludni,спать
+119,benzinkút,автозаправка
+120,szia,привет
+121,igen,да
+122,nem,нет
+123,kacsa,утка
+124,macska,кошка
+125,erdő,лес
+126,fű,трава
+127,út,дорога
+128,előre,вперёд
+129,balra,налево
+130,jobbra,направо
+131,hátra,назад
+132,felfelé,вверх
+133,lefelé,вниз
+134,nézni,смотреть
+135,kéz,рука
+136,hát,спина
+137,fül,ухо
+138,szem,глаз
+139,fej,голова
+140,szív,сердце
+141,száj,рот
+142,izom,мышца
+143,orr,нос
+144,váll,плечо
+145,bőr,кожа
+146,fog,зуб
+147,anya,мать
+148,apa,отец
+149,lánytestvér,сестра
+150,fiútestvér,брат
+151,holnap,завтра
+152,reggeli,завтрак
+153,tegnap,вчера
+154,hétvége,выходные
+155,hét (7 nap),неделя
+156,hétfő,понедельник
+157,kedd,вторник
+158,szerda,среда
+159,csütörtök,четверг
+160,péntek,пятница
+161,szombat,суббота
+162,vasárnap,воскресенье
+163,szabadnap,выходной
+164,jó,хороший
+165,ablak,окно
+166,nekem,мне
+167,neked,тебе
+168,neki,ему/ей
+169,nekünk,нам
+170,nektek,вам
+171,nekik,им
+172,szeretni,любить
+173,szőnyeg,ковёр
+174,kanapé,диван
+175,szék,стул
+176,asztal,стол
+177,föderális,федеральный
+178,biztonság,безопасность
+179,szolgálat,служба
+180,pepecselő,копуша
+181,tészta,макароны
+182,sajt,сыр
+183,gomba,гриб
+184,sonka,ветчина
+185,reszelő,тёрка
+186,hol,где
+187,só,соль
+188,hónap,месяц
+189,sziget,остров
+190,ló,лошадь
+191,kanál,ложка
+192,fehér,белый
+193,fekete,чёрный
+194,kék,синий
+195,zöld,зелёный
+196,barna,коричневый
+197,egy,один
+198,kettő,два
+199,három,три
+200,négy,четыре
+201,öt,пять
+202,hat,шесть
+203,hét,семь
+204,nyolc,восемь
+205,kilenc,девять
+206,tíz,десять
+207,tizenegy,одиннадцать
+208,tizenkettő,двенадцать
+209,tizenhárom,тринадцать
+210,tizennégy,четырнадцать
+211,tizenöt,пятнадцать
+212,tizenhat,шестнадцать
+213,tizenhét,семнадцать
+214,tizennyolc,восемнадцать
+215,tizenkilenc,девятнадцать
+216,húsz,двадцать
+217,harminc,тридцать
+218,negyven,сорок
+219,ötven,пятьдесят
+220,hatvan,шестьдесят
+221,hetven,семьдесят
+222,nyolcvan,восемьдесят
+223,kilencven,девяносто
+224,száz,сто
+225,ezer,тысяча
+226,millió,миллион
+227,fal,стена
+228,nagy,большой
+229,hosszú,длинный
+230,fáradt,уставший
+231,bajusz,усы
+232,tudni,знать
+233,gyors,быстрый
+234,várni,ждать
+235,telefon,телефон
+236,óra (időtartam),час
+237,bor,вино
+238,perc,минута
+239,sör,пиво
+240,dácsa,дача
+241,vicc,анекдот
+242,örül,радуется
+243,mert,потому что
+244,gyűrű,кольцо
+245,zuhany,душ
+246,gél,гель
+247,húsz éves vagyok,мне двадцать лет
+248,lakás,квартира
+249,nem messze,недалеко
+250,most,сейчас
+251,keresztnév,имя
+252,vezetéknév,фамилия
+253,születési hely,место рождения
+254,lakóhely,место жительства
+255,cím,адрес
+256,születési dátum,дата рождения
+257,telefonszám,номер телефона
+258,családi állapot,семейное положение
+259,házas (férfi),женат
+260,házas (nő),замужем
+261,engedje meg,разрешите
+262,mennyi,сколько
+263,nagyon örvendek,очень приятно
+264,lecke,урок
+265,olvasni,читать
+266,meleg,тёплый
+267,tej,молоко
+268,kenyér,хлеб
+269,színház,театр
+270,hűtőszekrény,холодильник
+271,büszke,гордый
+272,lehetetlen,невозможно
+273,múlt,прошлое
+274,jelen (igeidő),настоящее время
+275,jövő,будущее
+276,törvény,закон
+277,regionális,региональный
+278,szervezet,организация
+279,szituáció,ситуация
+280,új,новый
+281,újra,снова
+282,alap,основа
+283,egyértelmű,ясный
+284,időjárás,погода
+285,szoba,комната
+286,madár,птица
+287,védelem,защита
+288,semmi,ничего
+289,senki,никто
+290,soha,никогда
+291,sehol,нигде
+292,kísérlet,эксперимент
+293,hal,рыба
+294,halkan,тихо
+295,óvatosan,осторожно
+296,kész,готов
+297,tervezni,планировать
+298,probléma,проблема
+299,ünnepnap,праздник
+300,utca,улица
+301,kimenni,выйти
+302,valahova,куда-нибудь
+303,valamikor,когда-нибудь
+304,valaki,кто-нибудь
+305,valahol,где-нибудь
+306,mióta,с каких пор
+307,sajnálom,мне жаль
+308,mindenekelőtt,прежде всего
+309,vékony,тонкий
+310,vastag,толстый
+311,napozni,загорать
+312,benzin,бензин
+313,kábel,кабель
+314,megbánni,пожалеть
+315,gáz,газ
+316,születésnap,день рождения
+317,szakértő,эксперт
+318,felszabadít,освобождает
+319,egyszerű,простой
+320,üres,пустой
+321,kovács,кузнец
+322,nehéz,трудный
+323,bonyolult,сложный
+324,könnyű,лёгкий
+325,után,после
+326,előtt,перед
+327,oldal,сторона
+328,zavarni,мешать
+329,zab,овёс
+330,függöny,занавеска
+331,vásárolni,покупать
+332,ide,сюда
+333,javítani,ремонтировать
+334,azért, hogy,чтобы
+335,keresni,искать
+336,információ,информация
+337,tiltott,запрещённый
+338,szekta,секта
+339,mennyibe kerül,сколько стоит
+340,készpénz,наличные
+341,korábban,раньше
+342,felirat,надпись
+343,kinek,кому
+344,nekem,мне
+345,neked,тебе
+346,neki,ему/ей
+347,nekünk,нам
+348,nektek,вам
+349,nekik,им
+350,motoros utazás,мотопутешествие
+351,ott,там
+352,aztán,потом
+353,terem,зал
+354,zálog,залог
+355,bár,бар
+356,klub,клуб
+357,őrült,сумасшедший
+358,öreg,старый
+359,magas,высокий
+360,gonosz,злой
+361,forró,горячий
+362,híres,знаменитый
+363,legvégül,в конце концов
+364,valamin kívül,кроме
+365,én is ugyanúgy,я тоже
+366,nyelv,язык
+367,összesen,всего
+368,közlekedési dugó,пробка
+369,szénsavas ásványvíz,газированная минеральная вода
+370,finom,вкусный
+371,centiméter,сантиметр
+372,bunker,бункер
+373,csillagász,астроном
+374,elemezni,анализировать
+375,szerep,роль
+376,koalíció,коалиция
+377,utópia,утопия
+378,perspektíva,перспектива
+379,terület,территория
+380,anyag,материал
+381,karakter,характер
+382,jelleg,характеристика
+383,jelölt,кандидат
+384,szervező,организатор
+385,pánik,паника
+386,panoráma,панорама
+387,tradícionális,традиционный
+388,konferencia,конференция
+389,idilli,идиллический
+390,kapitalizmus,капитализм
+391,cigaretta,сигарета
+392,kritika,критика
+393,reformátor,реформатор
+394,bombázni,бомбить
+395,egyedülálló,уникальный
+396,pásztor,пастух
+397,rendszer,система
+398,citadella,цитадель
+399,periódus,период
+400,konfliktus,конфликт
+401,adat,данные
+402,dátum,дата
+403,állam,государство
+404,pozíció,позиция
+405,irodalom,литература
+406,rakéta,ракета
+407,tény,факт
+408,számla,счёт
+409,vallás,религия
+410,interjú,интервью
+411,részlet,деталь
+412,márvány,мрамор
+413,napló,дневник
+414,ékszerész,ювелир
+415,vendég,гость
+416,személyzet,персонал
+417,szuvenír,сувенир
+418,prioritás,приоритет
+419,ügyfél,клиент
+420,cirkusz,цирк
+421,katedra,кафедра
+422,intézet,институт
+423,baleset,авария
+424,társaság,компания
+425,négyzet,квадрат
+426,alkotmány,конституция
+427,klasszikus,классический
+428,mágia,магия
+429,kesudió,кешью
+430,internátus,интернат
+431,utas,пассажир
+432,felmosó,швабра
+433,reklám,реклама
+434,pavilon,павильон
+435,fogorvos,стоматолог
+436,festő,художник
+437,vertikális,вертикальный
+438,garancia,гарантия
+439,kozmetikum,косметика
+440,konténer,контейнер
+441,deszka,доска
+442,citrom,лимон
+443,lime,лайм
+444,recept,рецепт
+445,romantikus,романтический
+446,szimbólum,символ
+447,statisztika,статистика
+448,bátor,смелый
+449,előtte,до этого
+450,szükséges,необходимый
+451,kisgyerek,маленький ребёнок
+452,óvoda,детский сад
+453,doktor,врач
+454,újságíró,журналист
+455,ügyvéd,адвокат
+456,menedzser,менеджер
+457,adminisztrátor,администратор
+458,titkárnő,секретарь
+459,asszisztens,ассистент
+460,főnök,начальник
+461,direktor,директор
+462,belsőépítész,дизайнер интерьера
+463,ruha,одежда
+464,tájépítész,ландшафтный архитектор
+465,fodrász,парикмахер
+466,idegenvezető,гид
+467,autószerelő,автомеханик
+468,kolléga,коллега
+469,nővér (egészségügy),медсестра
+470,srác,парень
+471,barát,друг
+472,eladó,продавец
+473,téma,тема
+474,kasszás,кассир
+475,rendőr,полицейский
+476,író,писатель
+477,tudós,учёный
+478,kirándulás,экскурсия
+479,pók,паук
+480,fordító,переводчик
+481,építész,архитектор
+482,takarító,уборщик
+483,banán,банан
+484,mandarin,мандарин
+485,alma,яблоко
+486,narancs,апельсин
+487,ananász,ананас
+488,barack,персик
+489,kiwi,киви
+490,mangó,манго
+491,körte,груша
+492,szőlő,виноград
+493,görögdinnye,арбуз
+494,paradicsom,помидор
+495,cékla,свёкла
+496,káposzta,капуста
+497,répa,морковь
+498,bors,перец
+499,paprika,болгарский перец
+500,uborka,огурец
+501,hagyma,лук
+502,fokhagyma,чеснок
+503,termék,товар
+504,rizs,рис
+505,csokoládé,шоколад
+506,kolbász,колбаса
+507,tzatziki,дзадзики
+508,vaj,сливочное масло
+509,olaj,масло
+510,figyelmeztetés,предупреждение
+511,ezelőtt,до этого
+512,ikra,икра
+513,tojás,яйцо
+514,joghurt,йогурт
+515,kefír,кефир
+516,szósz,соус
+517,dzsúsz,сок
+518,metró,метро
+519,következő állomás,следующая станция
+520,sétány,проспект
+521,autóbusz,автобус
+522,trolibusz,троллейбус
+523,villamos,трамвай
+524,taxi,такси
+525,jegyellenőr,контролёр
+526,sofőr,водитель
+527,vonat,поезд
+528,megálló,остановка
+529,vagon,вагон
+530,kupé,купе
+531,visszafelé,обратно
+532,moha,мох
+533,millió,миллион
+534,variáns,вариант
+535,perc,минута
+536,hajrá!,давай!
+537,újság,газета
+538,hírek,новости
+539,lopni,воровать
+540,thriller,триллер
+541,regény,роман
+542,számtalan,бесчисленный
+543,megsértődött,обиделся
+544,ár,цена
+545,rekord,рекорд
+546,hitel,кредит
+547,hitelkártya,кредитная карта
+548,érem,медаль
+549,kapitány,капитан
+550,kóma,кома
+551,kontinuum,континуум
+552,cég,компания
+553,idealista,идеалист
+554,gyár,завод
+555,bizalmas,конфиденциальный
+556,kvittek vagyunk,мы в расчёте
+557,gesztus,жест
+558,jég,лёд
+559,jégtáncos,фигурист
+560,népesség,население
+561,felkel,встаёт
+562,fáradt,уставший
+563,megtanul,выучит
+564,márka,бренд
+565,tető,крыша
+566,előttem (fizikailag),передо мной
+567,ajtó,дверь
+568,udvar,двор
+569,határ,граница
+570,erről van szó!,вот в чём дело!
+571,érkezés,прибытие
+572,fejezet,глава
+573,úgyszintén,взаимно
+574,régen,давно
+575,messze,далеко
+576,megérkezni,приехать
+577,egyébként,кстати
+578,tegezni,говорить на «ты»
+579,telefonon hívni,позвонить
+580,amíg utazunk,пока мы едем
+581,elmesél,расскажет
+582,mesélj magadról,расскажи о себе
+583,oroszul,по-русски
+584,németül,по-немецки
+585,angolul,по-английски
+586,magyarul,по-венгерски
+587,franciául,по-французски
+588,spanyolul,по-испански
+589,arabul,по-арабски
+590,lengyelül,по-польски
+591,befejezni,закончить
+592,szabadság,отпуск
+593,remélni,надеяться
+594,tanulni,учиться
+595,kultúra,культура
+596,tál,миска
+597,keverék,смесь
+598,röntgen,рентген
+599,kinéz (megjelenés),выглядеть
+600,szimpatikus,симпатичный
+601,jóképű,красивый
+602,olvasni,читать
+603,gondolni,думать
+604,igazi férfi,настоящий мужчина
+605,érezni,чувствовать
+606,együtt,вместе
+607,szilárd,твёрдый
+608,króm,хром
+609,szabályozni,регулировать
+610,naptár,календарь
+611,navigáció,навигация
+612,elektromos ülés (autóban),электрическое сиденье
+613,elvileg,теоретически
+614,center,центр
+615,pillanat,момент
+616,lendület,импульс
+617,tartalék,запас
+618,óriási,огромный
+619,struktúra,структура
+620,egyedi,уникальный
+621,ügynökség,агентство
+622,ajánlani,рекомендовать
+623,neutrális,нейтральный
+624,szerv,орган
+625,elnyomás,угнетение
+626,kormányzó,губернатор
+627,szimbolizálni,символизировать
+628,aktivista,активист
+629,légkör,атмосфера
+630,kabinet,кабинет
+631,ellenzék,оппозиция
+632,parádé,парад
+633,terminál,терминал
+634,vezető (szervezetben),руководитель
+635,innováció,инновация
+636,rizikó,риск
+637,támadás,атака
+638,alapvető,основной
+639,sokkolni,шокировать
+640,sejt,клетка
+641,kémia,химия
+642,valuta,валюта
+643,csúcs,пик
+644,árfolyam,курс
+645,infláció,инфляция
+646,potenciál,потенциал
+647,profil,профиль
+648,lekció,лекция
+649,emóció,эмоция
+650,kikötő,порт
+651,ellen,против
+652,elemzés,анализ
+653,puha,мягкий
+654,modern (időszerű),современный
+655,moduláris,модульный
+656,elegáns,элегантный
+657,link,ссылка
+658,leírás,описание
+659,saját,собственный
+660,teljesen,полностью
+661,srácok,ребята
+662,mutatni,показывать
+663,ittlakó,местный житель
+664,meghitt,уютный
+665,kemény,твёрдый
+666,maradni,оставаться
+667,nemsokáig,недолго
+668,fiatalok,молодёжь
+669,atléta,спортсмен
+670,kabátka,куртка
+671,edzőcipő,кроссовки
+672,ruha,платье
+673,magassarok,высокий каблук
+674,top (ruha),топ
+675,rövidnadrág,шорты
+676,szandál,сандалии
+677,narancssárga,оранжевый
+678,illik rám,мне идёт
+679,válni valamivé,становиться
+680,még nem is látta,ещё не видел
+681,vajon,интересно
+682,kérdezni,спрашивать
+683,esedékes,предстоит
+684,venni (fizikailag),брать
+685,birtokolni,владеть
+686,erő,сила
+687,véletlen,случайность
+688,iroda,офис
+689,öltöny,костюм
+690,nadrág,брюки
+691,nadrág,штаны
+692,farmer,джинсы
+693,zakó,пиджак
+694,nyakkendő,галстук
+695,nagykabát,пальто
+696,kesztyű,перчатки
+697,csizma,сапоги
+698,medence,бассейн
+699,fürdőnadrág,плавки
+700,több,больше
+701,habár,хотя
+702,azonnal,немедленно
+703,teljesen,полностью
+704,kijönni,выйти
+705,válaszolni,отвечать
+706,között,между
+707,találni,находить
+708,megold,решает
+709,emlékezni,помнить
+710,korona,корона
+711,hold,луна
+712,kezdet,начало
+713,remény,надежда
+714,hóvihar,метель
+715,jól vagyok,я в порядке
+716,hiányzol,мне тебя не хватает
+717,elfoglalt vagyok,я занят
+718,kevesebb,меньше
+719,hogy ment?,как прошло?
+720,későn,поздно
+721,házi feladat,домашнее задание
+722,folyamat,процесс
+723,funkció,функция
+724,kézikönyv,руководство
+725,vállalat,предприятие
+726,választ,выбор
+727,gyűjt,собирает
+728,aktuális,актуальный
+729,gyűjtemény,коллекция
+730,konkrét,конкретный
+731,platform,платформа
+732,grandiózus,грандиозный
+733,zászlóshajó,флагман
+734,szedán,седан
+735,kombi,универсал
+736,architektúra,архитектура
+737,méret,размер
+738,nüansz,нюанс
+739,pszichológia,психология
+740,metódus,метод
+741,karakterisztika,характеристика
+742,felelősség,ответственность
+743,luxus,роскошь
+744,anakronizmus,анахронизм
+745,megszállás,оккупация
+746,elkap,поймает
+747,elmenni,уйти
+748,hozzászokni,привыкнуть
+749,élénk sárga,ярко-жёлтый
+750,szemüveg,очки
+751,kulcstartó,брелок
+752,pupillák,зрачки
+753,közelebb,ближе
+754,felhők,облака
+755,lépkedek,шагаю
+756,bolond,сумасшедший
+757,hazudni,лгать
+758,csönd,тишина
+759,tele van,полон
+760,keresztül,через
+761,fájdalom,боль
+762,fölöttem,надо мной
+763,suttog,шепчет
+764,felégetni,сжечь
+765,szakadék,пропасть
+766,ördög,дьявол
+767,kés élén,на острие ножа
+768,elfelejteni,забыть
+769,csupán,лишь
+770,zaj,шум
+771,mögöttem,позади меня
+772,földi,земной
+773,hamu,пепел
+774,megőrül,сойдёт с ума
+775,szabad,свободный
+776,jelenteni,означать
+777,félelem,страх
+778,együtt,вместе
+779,valóság,реальность
+780,alvásban,во сне
+781,ellenségeskedés,вражда
+782,megjósolt,предсказанный
+783,muzsika,музыка
+784,blincsek,блины
+785,vezeték,провод
+786,repülőgép,самолёт
+787,fiatal nő,молодая женщина
+788,tűz,огонь
+789,gépfegyver,пулемёт
+790,olvadni,таять
+791,halasztani,откладывать
+792,ma,сегодня
+793,megmosakodok,умываюсь
+794,reggelizni,завтракать
+795,ebédelni,обедать
+796,vacsorázni,ужинать
+797,bevásárlás,покупки
+798,lezuhanyozni,принять душ
+799,lefekszem aludni,ложусь спать
+800,rakni / tenni,класть
+801,állni,стоять
+802,rájönni,понять
+803,hívni,звать
+804,eljátszani,сыграть
+805,bekapcsolni,включить
+806,kikapcsolni,выключить
+807,kinyitni,открыть
+808,bezárni,закрыть
+809,meghalni,умереть
+810,adó,налог
+811,fülhallgató,наушники
+812,váza,ваза
+813,párna,подушка
+814,lélek,душа
+815,hely,место
+816,álom,сон
+817,takaró,одеяло
+818,belépés,вход
+819,elfogadni,принять
+820,törvényjavaslat,законопроект
+821,kvóta,квота
+822,oktatás,образование
+823,képzés,обучение
+824,támogatás,поддержка
+825,címezni,адресовать
+826,összegyűlt,собрался
+827,oldal,сторона
+828,eredmény,результат
+829,csapat,команда
+830,szavazni,голосовать
+831,országos,общенациональный
+832,bizalom,доверие
+833,keményen,усердно
+834,felelőségteljesen,ответственно
+835,eredményesen,эффективно
+836,erőteljes,мощный
+837,többmilliós,многомиллионный
+838,siker,успех
+839,megőrizni,сохранить
+840,egység,единство
+841,fontos,важный
+842,vonzani,привлекать
+843,haladni,продвигаться
+844,előre,вперёд
+845,éreznünk kell,мы должны чувствовать
+846,könyök,локоть
+847,állampolgár,гражданин
+848,kézenfogva,держась за руки
+849,folyamatában,в процессе
+850,aktuális,актуальный
+851,szempontok,аспекты
+852,cselekedni,действовать
+853,feltétlenül,обязательно
+854,elítélni,осуждать
+855,talicska,тачка
+856,tudatos,осознанный
+857,kezdő,начинающий
+858,pozitív,положительный
+859,negatív,отрицательный
+860,rész,часть
+861,tapasztalat,опыт
+862,gondolat,мысль
+863,felemel,поднимает
+864,készség,навык
+865,képesség,способность
+866,leragadni,застрять
+867,kellemetlenség,неприятность
+868,sértődés,обида
+869,élvezni,наслаждаться
+870,irritáció,раздражение
+871,titkol,скрывает
+872,harag,гнев
+873,nem érdemes,не стоит
+874,cipelni,нести
+875,különböző,различный
+876,lom,хлам
+877,fél,боится
+878,mert,потому что
+879,sebez,ранит
+880,csata,битва
+881,ellenség,враг
+882,önmaga,сам
+883,kicsiben kezdeni,начинать с малого
+884,kancsó,кувшин
+885,rosszakaró,недоброжелатель
+886,határ,граница
+887,koncentrál,концентрируется
+888,felmerül,возникает
+889,vakon,вслепую
+890,születik,рождается
+891,közepesen,умеренно
+892,megbízható,надёжный
+893,türelmetlen,нетерпеливый
+894,becstelen,бесчестный
+895,zajlik,происходит
+896,tárgyalások,переговоры
+897,négyszemközt,с глазу на глаз
+898,kibővített,расширенный
+899,összetétel,состав
+900,részvételével,с участием
+901,megjavítják,исправят
+902,fejlődés,развитие
+903,együttműködés,сотрудничество
+904,irányok,направления
+905,kicserél,заменит
+906,véleményeikkel,своими мнениями
+907,nehézség,трудность
+908,jobb később mint soha,лучше поздно чем никогда
+909,kérdés,вопрос
+910,felmérés,опрос
+911,képkocka,кадр
+912,gyűjtés,сбор
+913,bátor,смелый
+914,attraktív,привлекательный
+915,szép,красивый
+916,aranyos,милый
+917,göndör,кудрявый
+918,hullámos,волнистый
+919,egyenes,прямой
+920,férfi,мужчина
+921,nő,женщина
+922,világos hajú,светловолосый
+923,kopasz,лысый
+924,vékony,стройный
+925,felpróbál,примеряет
+926,aprótermetű,невысокий
+927,szakáll,борода
+928,megfésülködni,причесаться
+929,leírni,описать
+930,nyomás,давление
+931,megegyezőek,одинаковые
+932,igény,потребность
+933,hab,пена
+934,elérni,достичь
+935,kerámia,керамика
+936,autófólia,автомобильная плёнка
+937,kód,код
+938,tartós,долговечный
+939,vezetékes,проводной
+940,kényelmes,удобный
+941,fanatikus,фанатичный
+942,minőség,качество
+943,radiátor,радиатор
+944,tiszta,чистый
+945,elméletileg,теоретически
+946,röviden,кратко
+947,panasz,жалоба
+948,hegeszteni,сваривать
+949,potenciál,потенциал
+950,áru,товар
+951,raklap,поддон
+952,érték (szám),значение
+953,helyreállítani,восстановить
+954,kiadás,издание
+955,kisegítés,помощь
+956,feléleszt,оживляет
+957,megbocsátani,простить
+958,padlás,чердак
+959,összekever,смешает
+960,lényegében,по сути
+961,háziállat,домашнее животное
+962,szétnyitni,раскрыть
+963,ébresztőóra,будильник
+964,felszerelés,оборудование
+965,eszköz,инструмент
+966,elektromos,электрический
+967,hangszóró,динамик
+968,kamera,камера
+969,mosogatógép,посудомоечная машина
+970,mosógép,стиральная машина
+971,sütő,духовка
+972,kávégép,кофемашина
+973,légkondi,кондиционер
+974,fűtőtest,обогреватель
+975,rádió,радио
+976,dvd-lejátszó,DVD-плеер
+977,hajszárító,фен
+978,ventilátor,вентилятор
+979,porszívó,пылесос
+980,vasaló,утюг
+981,távkapcsoló,пульт дистанционного управления
+982,füstérzékelő,датчик дыма
+983,dolgozni,работать
+984,törött,сломанный
+985,használni,использовать
+986,rendszer,система
+987,zseblámpa,фонарик
+988,divat,мода
+989,blúz,блузка
+990,harisnya,колготки
+991,zseb,карман
+992,gomb,пуговица
+993,formaruha,униформа
+994,esernyő,зонт
+995,akszesszoár,аксессуар
+996,napszemüveg,солнцезащитные очки
+997,irattáska,портфель
+998,baseballsapka,бейсболка
+999,karkötő,браслет
+1000,tárca,кошелёк
+1001,nyaklánc,ожерелье
+1002,fülbevaló,серьги
+1003,gyűrű,кольцо
+1004,parfüm,духи
+1005,szűk,узкий
+1006,bő,просторный
+1007,felpróbál,примерять
+1008,felvesz (ruhát),надевать
+1009,levesz (ruhát),снимать
+1010,átöltözik,переодеваться
+1011,sötétség,темнота
+1012,világosság,свет
+1013,arany,золото
+1014,ezüst,серебро
+1015,sápadt,бледный
+1016,színes,цветной
+1017,krémes,кремовый
+1018,forma,форма
+1019,közép,центр
+1020,kör,круг
+1021,kereszt,крест
+1022,négyzet,квадрат
+1023,rombusz,ромб
+1024,csillag,звезда
+1025,vonal,линия
+1026,pont,точка
+1027,oldal,сторона
+1028,felület,поверхность
+1029,lapos,плоский
+1030,kerek,круглый
+1031,rajzolni,рисовать
+1032,kiszínezni,раскрашивать
+1033,egész,целый
+1034,festmény,картина
+1035,komputer,компьютер
+1036,chat,чат
+1037,laptop,ноутбук
+1038,monitor,монитор
+1039,kijelző,дисплей
+1040,billentyűzet,клавиатура
+1041,egér,мышь
+1042,nyomtató,принтер
+1043,számológép,калькулятор
+1044,felhasználónév,имя пользователя
+1045,jelszó,пароль
+1046,internet,интернет
+1047,posta,почта
+1048,üzenet,сообщение
+1049,videó,видео
+1050,megjegyzés,заметка
+1051,fájl,файл
+1052,dokumentum,документ
+1053,letölt,скачивает
+1054,feltölt,загружает
+1055,megnyom,нажимает
+1056,küld,отправляет
+1057,digitális,цифровой
+1058,kép,изображение
+1059,másolni,копировать
+1060,beilleszteni,вставить
+1061,kurzus,курс
+1062,tárgy,предмет
+1063,szint,уровень
+1064,szemeszter,семестр
+1065,csoporttárs,одногруппник
+1066,partner,партнёр
+1067,szótár,словарь
+1068,vizsga,экзамен
+1069,teszt,тест
+1070,gyakorlat,упражнение
+1071,aktivitás,активность
+1072,probléma,проблема
+1073,megold,решает
+1074,jegy (iskola),оценка
+1075,projekt,проект
+1076,kutatás,исследование
+1077,cikk,статья
+1078,összefoglalás,резюме
+1079,tartalomjegyzék,оглавление
+1080,oldal (könyv),страница
+1081,iskolatábla,доска
+1082,menza,столовая
+1083,lista,список
+1084,jegyzet,конспект
+1085,átmenni a vizsgán,сдать экзамен
+1086,megbukni,провалить экзамен
+1087,jelen lenni,присутствовать
+1088,hiányozni,отсутствовать
+1089,junior,джуниор
+1090,fókuszálni,сосредоточиться
+1091,háziállat,домашнее животное
+1092,bárány,ягнёнок
+1093,teve,верблюд
+1094,tigris,тигр
+1095,bálna,кит
+1096,pingvin,пингвин
+1097,cápa,акула
+1098,bogár,жук
+1099,szúnyog,комар
+1100,krokodil,крокодил
+1101,delfin,дельфин
+1102,róka,лиса
+1103,hörcsög,хомяк
+1104,farok,хвост
+1105,pókháló,паутина
+1106,állatkert,зоопарк
+1107,szarvas,олень
+1108,sas,орёл
+1109,rovar,насекомое
+1110,méhecske,пчела
+1111,pillangó,бабочка
+1112,csótány,таракан
+1113,tehén,корова
+1114,faj,вид
+1115,vad,дикий
+1116,vadászni,охотиться
+1117,lovagol,ездит верхом
+1118,mosoly,улыбка
+1119,megjelenni,появиться
+1120,eldugni,спрятать
+1121,vér,кровь
+1122,csont,кость
+1123,mellkas,грудь
+1124,gerinc,позвоночник
+1125,lélegezni,дышать
+1126,kövér,толстый
+1127,koponya,череп
+1128,minden kezdet nehéz,liha beda nacsalo
+1129,gond,beda
+1130,bemutatkozás,представление
+1131,gyakorlat,uprazsnyenyie
+1132,kozmopolita,космополит
+1133,parazita,паразит
+1134,autómata,автомат
+1135,akrobata,акробат
+1136,bürokrata,бюрократ
+1137,pszichopata,психопат
+1138,tünet,симптом
+1139,tarifa,тариф
+1140,kupola,купол
+1141,anekdóta,анекдот
+1142,gyógyszertár,аптека
+1143,gyógyszerész,фармацевт
+1144,január,январь
+1145,február,февраль
+1146,március,март
+1147,április,апрель
+1148,május,май
+1149,június,июнь
+1150,július,июль
+1151,augusztus,август
+1152,szeptember,сентябрь
+1153,október,октябрь
+1154,november,ноябрь
+1155,december,декабрь
+1156,hatalom,власть
+1157,aláírni,подписать
+1158,kapcsolat,связь
+1159,lánc,цепь
+1160,apróság,мелочь
+1161,hazugság,ложь
+1162,gyász,ckorb
+1163,platform,платформа
+1164,premier,премьера
+1165,karrier,карьера
+1166,pantomim,пантомима
+1167,licensz,лицензия
+1168,elit,элита
+1169,reform,реформа
+1170,kabin,кабина
+1171,brigád,бригада
+1172,blokád,блокада
+1173,terasz,терраса
+1174,ikon,икона
+1175,pánik,паника
+1176,rutin,рутина
+1177,szasszé,шассе
+1178,alibi,алиби
+1179,ragu,рагу
+1180,zsűri,жюри
+1181,esőkabát,плащ
+1182,dió,орех
+1183,félcipő,туфли
+1184,bokacipő,ботинки
+1185,csizma,сапоги
+1186,zokni,носки
+1187,síléc,лыжи
+1188,korcsolya,коньки
+1189,bölcsőde,ясли
+1190,vakáció,каникулы
+1191,spanyol,испанец
+1192,svéd,швед
+1193,lengyel,поляк
+1194,angol,англичанин
+1195,német,немец
+1196,finn,финн
+1197,amerikai,американец
+1198,pilóta,пилот
+1199,matróz,моряк
+1200,esély,шанс
+1201,perspektíva,перспектива
+1202,ünneplünk,мы празднуем
+1203,unokaöccs,племянник
+1204,összetalálkozunk,мы встретимся
+1205,elfoglalt,занятый
+1206,szigorú,строгий
+1207,friss,свежий
+1208,közös,общий
+1209,szoknya,юбка
+1210,első,первый
+1211,második,второй
+1212,harmadik,третий
+1213,negyedik,четвёртый
+1214,ötödik,пятый
+1215,hatodik,шестой
+1216,hetedik,седьмой
+1217,nyolcadik,восьмой
+1218,kilencedik,девятый
+1219,tizedik,десятый
+1220,tizenharmadik,тринадцатый
+1221,huszadik,двадцатый
+1222,negyvenedik,сороковой
+1223,századik,сотый
+1224,ezredik,тысячный
+1225,milliomodik,миллионный
+1226,magassarok,высокий каблук
+1227,viselek,ношу
+1228,köntös,халат
+1229,beszéd,речь
+1230,nagy,большой
+1231,kicsi,маленький
+1232,széles,широкий
+1233,szűk,узкий
+1234,ez rám pont jó,мне как раз
+1235,fogat mosni,чистить зубы
+1236,keménytojás,варёное яйцо
+1237,elhozni a lányomat,забрать мою дочь
+1238,szörnyen,ужасно
+1239,eső,дождь
+1240,szél,ветер
+1241,elefánt,slon
+1242,fém, metall
+1243,műanyag, plasztik
+1244,napirend,распорядок дня
+1245,olvasás,чтение
+1246,megjelenés külső,внешностb
+1247,ovális,овальный
+1248,közepesen,средне
+1249,magas,высокий
+1250,magasság,рост
+1251,diétázik,сидеть на диете
+1252,megbízható,надёжный
+1253,türelmetlen,нетерпеливый
+1254,becstelen,непорядочный
+1255,barna szem,карие глаза
+1256,erős testalkatú,крепкого телосложения
+1257,gyakran,часто
+1258,barna hajú férfi,брюнет
+1259,elkésik,опаздывает
+1260,segítőkész,отзывчивый
+1261,humorérzék,чувство юмора
+1262,félelem,страх
+1263,gyógyszer,таблетка
+1264,megbeszélni,обсуждать
+1265,kiadvány,выпуск
+1266,aláírni,подписывать
+1267,ünneplünk,празднуем
+1268,lépésről lépésre,шаг за шагом
+1269,fehérje,белок
+1270,szénhidrát,углевод
+1271,zsír,жир
+1272,ne topogj!,не топай!
+1273,tányér,тарелка
+1274,tartós,прочный
+1275,karcsú,строиная
+1276,arna szem,карие глаза
+1277,társaság lelke,душа компании
+1278,hallás utáni értésбаудирование
+1279,tükör,зеркало
+1280,állandóan,постоянно
