@@ -32,37 +32,40 @@
         /* Egy sor (Név + Kapcsoló) - Teljes szélességű sáv */
         .switch-row {
             width: 100%;
+            min-height: 54px; /* Egységes, kényelmes sáv-magasság */
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: stretch; /* A gyerek elemek (szöveg és kapcsoló) kitöltik a teljes magasságot */
             gap: 12px;
-            padding: 11px 16px; /* iPhone 11 Pro szélességre (375px) optimalizált belső margó */
+            padding-left: 22px; /* Bal oldalon néhány pixellel beljebb */
+            padding-right: 0;   /* Jobb oldalon teljesen falig ér */
             background-color: #57606f; /* Alapértelmezett: Világosabb szürke */
             transition: background-color 0.25s ease;
         }
 
         .switch-label {
-            font-size: 14px; /* Eggyel kisebb betűméret */
+            display: flex;
+            align-items: center; /* Függőlegesen középre igazítja a szöveget */
+            padding: 10px 0;
+            font-size: 14px;
             font-weight: 600;
             line-height: 1.25;
             color: #ffffff;
             user-select: none;
         }
 
-        /* 3 állású kapcsoló téglalapja */
+        /* 3 állású kapcsoló téglalapja - Kitölti a sáv magasságát */
         .tri-switch {
             position: relative;
-            flex-shrink: 0; /* Megakadályozza, hogy a hosszú szöveg összenyomja a kapcsolót */
-            width: 84px;
-            height: 32px;
+            flex-shrink: 0;
+            width: 96px; /* Kicsit szélesebb, hogy arányos maradjon a nagyobb magassághoz */
             background-color: rgba(0, 0, 0, 0.25);
-            border-radius: 6px;
+            border-radius: 0; /* Szögletes szélek, hogy hézagmentesen simuljon a sávhoz és a falhoz */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 4px;
             cursor: pointer;
-            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 2px 0 6px rgba(0, 0, 0, 0.25);
         }
 
         /* Kattintható zónák a kapcsolón belül */
@@ -75,10 +78,10 @@
         /* A mozgó gomb (pöcök) */
         .knob {
             position: absolute;
-            top: 3px;
-            left: 29px;
-            width: 26px;
-            height: 26px;
+            top: 4px;
+            bottom: 4px; /* Automatikusan követi a sáv magasságát */
+            left: calc(50% - 14px);
+            width: 28px;
             border-radius: 4px;
             background-color: #ffffff;
             transition: left 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -91,7 +94,7 @@
             background-color: #e74c3c;
         }
         .switch-row[data-state="left"] .tri-switch .knob {
-            left: 3px;
+            left: 4px;
         }
 
         /* KÖZÉPEN: SZÜRKE SOR */
@@ -99,7 +102,7 @@
             background-color: #57606f;
         }
         .switch-row[data-state="center"] .tri-switch .knob {
-            left: 29px;
+            left: calc(50% - 14px);
         }
 
         /* JOBBRA: ZÖLD SOR */
@@ -107,7 +110,7 @@
             background-color: #27ae60;
         }
         .switch-row[data-state="right"] .tri-switch .knob {
-            left: 55px;
+            left: calc(100% - 32px);
         }
     </style>
 </head>
@@ -122,14 +125,14 @@
         const kapcsoloNevek = [
             "Hála",
             "Laza Hangulat",
-            "Na:szó,idő, aján,szívesség, érint",
-            "Ni:szó,idő, aján,szívesség, érint",
+            "Na:szó,idő,aján,szíves,érint",
+            "Ni:szó,idő,aján,szíves,érint",
             "Edzés",
             "Kaja Ist/Soll",
             "Kommunikáció",
             "Pénz",
             "Nyelvek",
-            "Elengeded a nem szüks?"
+            "Elengeded a nem szükségest?"
         ];
 
         const container = document.getElementById("switchesContainer");
