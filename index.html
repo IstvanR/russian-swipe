@@ -55,19 +55,20 @@
             user-select: none;
         }
 
-        /* 3 állású kapcsoló pályája */
+        /* 3 állású kapcsoló téglalapja */
         .tri-switch {
             position: relative;
             width: 90px;
             height: 34px;
-            background-color: #18181f;
-            border-radius: 20px;
+            background-color: #57606f; /* Alapértelmezett: Szürke */
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0 4px;
             cursor: pointer;
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.6);
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35);
+            transition: background-color 0.25s ease, box-shadow 0.25s ease;
         }
 
         /* Kattintható zónák a kapcsolón belül */
@@ -81,35 +82,40 @@
         .knob {
             position: absolute;
             top: 3px;
-            left: 31px; /* Alapértelmezett: Közép */
+            left: 31px;
             width: 28px;
             height: 28px;
-            border-radius: 50%;
-            background-color: #ffffff; /* Középen fehér */
-            transition: left 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.25s ease, box-shadow 0.25s ease;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            background-color: #ffffff;
+            transition: left 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
             z-index: 1;
         }
 
-        /* BALRA: PIROS */
+        /* BALRA: PIROS TÉGLALAP */
+        .tri-switch[data-state="left"] {
+            background-color: #ff4757;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 12px rgba(255, 71, 87, 0.5);
+        }
         .tri-switch[data-state="left"] .knob {
             left: 3px;
-            background-color: #ff4757;
-            box-shadow: 0 0 12px rgba(255, 71, 87, 0.8);
         }
 
-        /* KÖZÉPEN: FEHÉR */
+        /* KÖZÉPEN: SZÜRKE TÉGLALAP */
+        .tri-switch[data-state="center"] {
+            background-color: #57606f;
+        }
         .tri-switch[data-state="center"] .knob {
             left: 31px;
-            background-color: #ffffff;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
         }
 
-        /* JOBBRA: ZÖLD */
+        /* JOBBRA: ZÖLD TÉGLALAP */
+        .tri-switch[data-state="right"] {
+            background-color: #2ed573;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 12px rgba(46, 213, 115, 0.5);
+        }
         .tri-switch[data-state="right"] .knob {
             left: 59px;
-            background-color: #2ed573;
-            box-shadow: 0 0 12px rgba(46, 213, 115, 0.8);
         }
     </style>
 </head>
@@ -119,7 +125,7 @@
 
     <script>
         // ==========================================
-        // ITT TUDOD KÖNNYEDÉN ÁTÍRNI A NEVEKET:
+        // ITT TUDOD KÖNNYEDÉN ÁTÍRNI A 9 NEVET:
         // ==========================================
         const kapcsoloNevek = [
             "1. Kapcsoló neve",
@@ -130,8 +136,7 @@
             "6. Kapcsoló neve",
             "7. Kapcsoló neve",
             "8. Kapcsoló neve",
-            "9. Kapcsoló neve",
-            "10. Kapcsoló neve"
+            "9. Kapcsoló neve"
         ];
 
         const container = document.getElementById("switchesContainer");
@@ -147,7 +152,7 @@
 
             const switchEl = document.createElement("div");
             switchEl.className = "tri-switch";
-            switchEl.dataset.state = "center"; // Induláskor középen van (fehér)
+            switchEl.dataset.state = "center"; // Induláskor középen van (szürke)
             switchEl.dataset.index = index;
 
             // 3 kattintható zóna (Bal, Közép, Jobb)
