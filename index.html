@@ -35,7 +35,7 @@
             min-height: 54px; /* Egységes, kényelmes sáv-magasság */
             display: flex;
             justify-content: space-between;
-            align-items: stretch; /* A gyerek elemek (szöveg és kapcsoló) kitöltik a teljes magasságot */
+            align-items: stretch; /* A gyerek elemek kitöltik a teljes magasságot */
             gap: 12px;
             padding-left: 22px; /* Bal oldalon néhány pixellel beljebb */
             padding-right: 0;   /* Jobb oldalon teljesen falig ér */
@@ -54,11 +54,11 @@
             user-select: none;
         }
 
-        /* 3 állású kapcsoló téglalapja - Kitölti a sáv magasságát */
+        /* 3 állású kapcsoló téglalapja - 1,6-szoros szélesség (96px * 1.6 = 154px) */
         .tri-switch {
             position: relative;
             flex-shrink: 0;
-            width: 96px; /* Kicsit szélesebb, hogy arányos maradjon a nagyobb magassághoz */
+            width: 154px; 
             background-color: rgba(0, 0, 0, 0.25);
             border-radius: 0; /* Szögletes szélek, hogy hézagmentesen simuljon a sávhoz és a falhoz */
             display: flex;
@@ -80,8 +80,8 @@
             position: absolute;
             top: 4px;
             bottom: 4px; /* Automatikusan követi a sáv magasságát */
-            left: calc(50% - 14px);
-            width: 28px;
+            left: 4px;
+            width: 46px; /* Arányosan szélesebb pöcök az 1,6-szoros kapcsolóhoz */
             border-radius: 4px;
             background-color: #ffffff;
             transition: left 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -102,7 +102,7 @@
             background-color: #57606f;
         }
         .switch-row[data-state="center"] .tri-switch .knob {
-            left: calc(50% - 14px);
+            left: calc(50% - 23px);
         }
 
         /* JOBBRA: ZÖLD SOR */
@@ -110,7 +110,7 @@
             background-color: #27ae60;
         }
         .switch-row[data-state="right"] .tri-switch .knob {
-            left: calc(100% - 32px);
+            left: calc(100% - 50px);
         }
     </style>
 </head>
