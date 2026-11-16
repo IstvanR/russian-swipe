@@ -14,38 +14,36 @@
         }
 
         body {
-            background-color: #2b2b36; /* Teljes képernyős sötétszürke alapháttér */
+            background-color: #2b2b36;
             color: #ffffff;
             min-height: 100vh;
             width: 100%;
         }
 
-        /* Teljes szélességű konténer */
         #switchesContainer {
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 4px; /* Vékony rés a sávok között */
+            gap: 4px;
             padding: 4px 0;
         }
 
-        /* Egy sor (Név + Kapcsoló) - Teljes szélességű sáv */
         .switch-row {
             width: 100%;
-            min-height: 54px; /* Egységes, kényelmes sáv-magasság */
+            min-height: 54px;
             display: flex;
             justify-content: space-between;
-            align-items: stretch; /* A gyerek elemek kitöltik a teljes magasságot */
+            align-items: stretch;
             gap: 12px;
-            padding-left: 22px; /* Bal oldalon néhány pixellel beljebb */
-            padding-right: 0;   /* Jobb oldalon teljesen falig ér */
-            background-color: #57606f; /* Alapértelmezett: Világosabb szürke */
+            padding-left: 22px;
+            padding-right: 0;
+            background-color: #57606f;
             transition: background-color 0.25s ease;
         }
 
         .switch-label {
             display: flex;
-            align-items: center; /* Függőlegesen középre igazítja a szöveget */
+            align-items: center;
             padding: 10px 0;
             font-size: 14px;
             font-weight: 600;
@@ -54,13 +52,12 @@
             user-select: none;
         }
 
-        /* 3 állású kapcsoló téglalapja - 1,6-szoros szélesség (96px * 1.6 = 154px) */
         .tri-switch {
             position: relative;
             flex-shrink: 0;
             width: 154px; 
             background-color: rgba(0, 0, 0, 0.25);
-            border-radius: 0; /* Szögletes szélek, hogy hézagmentesen simuljon a sávhoz és a falhoz */
+            border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -68,20 +65,18 @@
             box-shadow: inset 2px 0 6px rgba(0, 0, 0, 0.25);
         }
 
-        /* Kattintható zónák a kapcsolón belül */
         .click-zone {
             width: 33.33%;
             height: 100%;
             z-index: 2;
         }
 
-        /* A mozgó gomb (pöcök) */
         .knob {
             position: absolute;
             top: 4px;
-            bottom: 4px; /* Automatikusan követi a sáv magasságát */
+            bottom: 4px;
             left: 4px;
-            width: 46px; /* Arányosan szélesebb pöcök az 1,6-szoros kapcsolóhoz */
+            width: 46px;
             border-radius: 4px;
             background-color: #ffffff;
             transition: left 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -119,9 +114,6 @@
     <div id="switchesContainer"></div>
 
     <script>
-        // ==========================================
-        // ITT TUDOD KÖNNYEDÉN ÁTÍRNI A NEVEKET:
-        // ==========================================
         const kapcsoloNevek = [
             "Hála",
             "Laza Hangulat",
@@ -132,17 +124,16 @@
             "Kommunikáció",
             "Pénz",
             "Nyelvek",
-            "Rend / tisztaság"
+            "Rend / tisztaság",
             "Elengeded a nem szükségest?"
         ];
 
         const container = document.getElementById("switchesContainer");
 
-        // Kapcsolók legenerálása a lista alapján
         kapcsoloNevek.forEach((nev, index) => {
             const row = document.createElement("div");
             row.className = "switch-row";
-            row.dataset.state = "center"; // Alapértelmezett állapot: közép (szürke)
+            row.dataset.state = "center";
 
             const label = document.createElement("span");
             label.className = "switch-label";
@@ -152,18 +143,16 @@
             switchEl.className = "tri-switch";
             switchEl.dataset.index = index;
 
-            // 3 kattintható zóna (Bal, Közép, Jobb)
             const states = ["left", "center", "right"];
             states.forEach(state => {
                 const zone = document.createElement("div");
                 zone.className = "click-zone";
                 zone.addEventListener("click", () => {
-                    row.dataset.state = state; // A teljes sor állapota változik
+                    row.dataset.state = state;
                 });
                 switchEl.appendChild(zone);
             });
 
-            // Mozgó pöcök
             const knob = document.createElement("div");
             knob.className = "knob";
             switchEl.appendChild(knob);
